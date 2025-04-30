@@ -1,0 +1,7 @@
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG-#1 C++.vcxproj.AssemblyReference.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG__1_C__.Form1.resources
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG-#1 C++.vcxproj.GenerateResource.cache
+C:\Users\marcm\OneDrive - URV\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG-#1 C++.vcxproj.AssemblyReference.cache
+C:\Users\marcm\OneDrive - URV\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG__1_C__.Form1.resources
+C:\Users\marcm\OneDrive - URV\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG-#1 C++.vcxproj.GenerateResource.cache
+C:\Users\marcm\OneDrive - URV\TFG\CAPÍTOL 1\TFG-#1 C++\TFG-#1 C++\x64\Debug\TFG__1_C__.Form2.resources

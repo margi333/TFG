@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CppCLR_WinFormsProject.cpp
+  Form1.cpp
+  MyForm.cpp
+  Generando código...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
+  TFG-#1 C++.vcxproj -> C:\Users\marcm\OneDrive - URV\TFG\CAPÍTOL 1\TFG-#1 C++\x64\Debug\TFG-#1 C++.exe
