@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="Tenda.MainPage">
+
+    <ScrollView
+        BackgroundColor="White">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Image
+                Source="logo.jpg."
+                HeightRequest="150"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Correu:"
+                Style="{StaticResource SubHeadline}"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+                x:Name="correu"
+                TextColor="Black"
+                Placeholder="Escriu aquí el correu"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="Constrasenya:"
+                Style="{StaticResource SubHeadline}"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+                x:Name="contrasenya"
+                TextColor="Black"
+                IsPassword="True"
+                Placeholder="Escriu aquí el teu nom"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout  
+                Padding="30,0"
+                HorizontalOptions="Center"
+                Spacing="25">
+                <Button
+                x:Name="EntryBtn"
+                Text="Entrar" 
+                Clicked="EntryBtnClicked"
+                HorizontalOptions="Center" />
+                <Button
+                x:Name="RegisterBtn"
+                Text="Crear conta" 
+                Clicked="RegisterBtnClicked"
+                HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

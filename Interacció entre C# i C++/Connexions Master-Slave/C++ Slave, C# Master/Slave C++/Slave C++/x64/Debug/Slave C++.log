@@ -1,0 +1,4 @@
+﻿  Slave C++.cpp
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Slave C++\Slave C++.cpp(133,9): warning C4101: 'iResult': variable local sin referencia
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Slave C++\Slave C++.cpp(133,18): warning C4101: 'ret': variable local sin referencia
+  Slave C++.vcxproj -> C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Slave C++\x64\Debug\Slave C++.exe

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tenda.Pàgines.NewUser"
+             Title="NewUser">
+    <VerticalStackLayout
+        BackgroundColor="White"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="25">
+
+        <!-- Nom -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Nom"
+                WidthRequest="130"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                FontSize="18"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="nom"
+                TextColor="Black"
+                Placeholder="Escriu aquí el nom"
+                HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <!-- Correu -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Correu"
+                WidthRequest="130"
+                FontSize="18"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="correu1"
+                TextChanged="correu1_TextChanged"
+                TextColor="Black"
+                Placeholder="Escriu aquí el correu"
+                HorizontalOptions="Center"/>
+            <Label
+                Text=""
+                x:Name="val_correu1"
+                Style="{StaticResource SubHeadline}"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+
+        <!-- Repetir Correu -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Repeteix el correu"
+                WidthRequest="130"
+                FontSize="18"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="correu2"
+                TextChanged="correu2_TextChanged"
+                TextColor="Black"
+                Placeholder="Escriu aquí el correu"
+                HorizontalOptions="Center"/>
+            <Label
+                Text=""
+                x:Name="val_correu2"
+                Style="{StaticResource SubHeadline}"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+
+        <!-- Contrasenya -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Contrasenya"
+                WidthRequest="130"
+                FontSize="18"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="contrasenya"
+                TextChanged="contrasenya_TextChanged"
+                TextColor="Black"
+                IsPassword="True"
+                Placeholder="Escriu aquí la contrasenya"
+                HorizontalOptions="Center"/>
+            <Label
+                Text=""
+                x:Name="val_contrasenya"
+                Style="{StaticResource SubHeadline}"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+
+        <!-- Telèfon -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Telèfon"
+                WidthRequest="130"
+                FontSize="18"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="telefon"
+                TextColor="Black"
+                TextChanged="telefon_TextChanged"
+                Placeholder="Escriu aquí el telèfon"
+                HorizontalOptions="Center"/>
+            <Label
+                Text=""
+                x:Name="val_telefon"
+                Style="{StaticResource SubHeadline}"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+
+        <!-- Adreça -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+                Text="Adreça"
+                WidthRequest="130"
+                FontSize="18"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                x:Name="adreça"
+                TextColor="Black"
+                Placeholder="Escriu aquí l'adreça"
+                HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <!-- Botons -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Button
+                x:Name="CrearBtn"
+                Text="Crear conta" 
+                Clicked="CrearBtnClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="LoginBtn"
+                Text="Tornar al Login" 
+                Clicked="LoginBtnClicked"
+                HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

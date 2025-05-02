@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Master.SecondaryPage"
+             Title="Connectat al PC">
+    <ScrollView
+        BackgroundColor="White">
+        <VerticalStackLayout>
+            <Label 
+                Text="Indica quin missatge vols mostrar per consola:"
+                TextColor="Black"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Entry
+                Style="{StaticResource SubHeadline}"
+                x:Name="TextEnviar"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                Placeholder="Text a enviar al esclau"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="30">
+
+            <Button
+                x:Name="EnviarBtn"
+                Text="Enviar!" 
+                Clicked="OnEnviarClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="DesconnectarBtn"
+                Text="Desconnectar" 
+                Clicked="OnDesconnectarClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="ReclamarBtn"
+                Text="Reclamar última paraula enviada" 
+                Clicked="OnReclamarClicked"
+                HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
+</ContentPage>

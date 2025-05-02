@@ -1,0 +1,4 @@
+﻿  Master C++.cpp
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C++\Master C++.cpp(118,9): warning C4101: 'len': variable local sin referencia
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C++\Master C++.cpp(117,10): warning C4101: 'buffer': variable local sin referencia
+  Master C++.vcxproj -> C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C++\x64\Debug\Master C++.exe

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tenda.PaginaSecundaria"
+             Title="Home">
+    <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25">
+        <Label 
+            Text="{Binding Nom, StringFormat='Benvingut! {0}'}"
+            Style="{StaticResource Headline}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="On t'agradaria accedir?"
+            Style="{StaticResource SubHeadline}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <HorizontalStackLayout
+            Padding="50,0"
+            Spacing="50"
+            HorizontalOptions="Center">
+            <VerticalStackLayout
+                Padding="20,0"
+                Spacing="25">
+                <Image
+                    Source="into_camisetes.jpg"
+                    HeightRequest="150"
+                    Aspect="AspectFit" />
+                <Button
+                    x:Name="CamisetesBtn"
+                    Text="Camisetes" 
+                    Clicked="CamisetesBtnClicked"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Padding="20,0"
+                Spacing="25">
+                <Image
+                    Source="info_pantalons.jpg"
+                    HeightRequest="150"
+                    Aspect="AspectFit" />
+                <Button
+                    x:Name="PantalonsBtn"
+                    Text="Pantalons" 
+                    Clicked="PantalonsBtnClicked"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+            
+        </HorizontalStackLayout>
+        <Button
+                    x:Name="LogoutBtn"
+                    Text="Logout" 
+                    Clicked="LogOutBtnClicked"
+                    HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+</ContentPage>

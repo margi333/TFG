@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Fitxar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Fitxar"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Fitxar">
+    <ShellContent
+        Title="Fitxatge"
+        ContentTemplate="{DataTemplate local:Fitxatge}"
+        Route="Fitxatge" />
+
+    <ShellContent
+        Title="Configuració"
+        ContentTemplate="{DataTemplate local:Configuracio}"
+        Route="Configuració" />
+
+</Shell>

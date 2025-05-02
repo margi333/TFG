@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitxar.Fitxatge"
+             Title="Fitxatge">
+    <VerticalStackLayout
+        BackgroundColor="Black">
+        <Label 
+    Text="{Binding Nom, StringFormat='Benvingut! {0}'}"
+    Style="{StaticResource Headline}"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+        <Button
+    x:Name="FitxarBtn"
+    Text="Fitxar" 
+    Clicked="FitxarBtnClicked"
+    BackgroundColor="Blue"
+    HorizontalOptions="Center" />
+
+        <Border BackgroundColor="Black" Padding="20">
+            <VerticalStackLayout HorizontalOptions="Center">
+                <Label x:Name="HoraLabel"
+           FontSize="36"
+           FontAttributes="Bold"
+           TextColor="White"
+           HorizontalOptions="Center" />
+                <Label Text="Encara no has fitxat avui"
+           x:Name="EstatFitxatge"
+           FontSize="14"
+           HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Border>
+        <VerticalStackLayout Spacing="10">
+            <CollectionView ItemsSource="{Binding Fitxades}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10" ColumnDefinitions="*, Auto">
+                            <Label Text="{Binding Dia}" FontSize="14" TextColor="White" />
+                            <Label Text="{Binding Hores}" FontSize="14" TextColor="White" Grid.Column="1" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

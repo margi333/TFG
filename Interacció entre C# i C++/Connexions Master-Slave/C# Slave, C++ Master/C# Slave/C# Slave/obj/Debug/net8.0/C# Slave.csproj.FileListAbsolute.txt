@@ -1,0 +1,42 @@
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\bin\Debug\net8.0\C# Slave.exe
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\bin\Debug\net8.0\C# Slave.deps.json
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\bin\Debug\net8.0\C# Slave.runtimeconfig.json
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\bin\Debug\net8.0\C# Slave.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\bin\Debug\net8.0\C# Slave.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfoInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfo.cs
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.csproj.CoreCompileInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\refint\C# Slave.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\C# Slave.genruntimeconfig.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\C# Slave\obj\Debug\net8.0\ref\C# Slave.dll
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.exe
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.deps.json
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.runtimeconfig.json
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.dll
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.pdb
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.dll
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\refint\C# Slave.dll
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.pdb
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive - Euncet Business School\Documentos\C# Slave\C# Slave\obj\Debug\net8.0\ref\C# Slave.dll
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.exe
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.deps.json
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.runtimeconfig.json
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.dll
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\bin\Debug\net8.0\C# Slave.pdb
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.dll
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\refint\C# Slave.dll
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.pdb
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\C# Slave.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\C# Slave\C# Slave\obj\Debug\net8.0\ref\C# Slave.dll

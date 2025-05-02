@@ -1,0 +1,4 @@
+C:\Users\marcm\Escritorio\App Master\bin\Release\net9.0-android\publish\com.companyname.appmaster-Signed.aab
+C:\Users\marcm\Escritorio\App Master\bin\Release\net9.0-android\publish\com.companyname.appmaster.aab
+C:\Users\marcm\Escritorio\App Master\bin\Release\net9.0-android\publish\com.companyname.appmaster-Signed.apk
+C:\Users\marcm\Escritorio\App Master\bin\Release\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll

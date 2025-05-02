@@ -1,0 +1,14 @@
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\bin\Debug\net8.0\Master C#.exe
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\bin\Debug\net8.0\Master C#.deps.json
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\bin\Debug\net8.0\Master C#.runtimeconfig.json
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\bin\Debug\net8.0\Master C#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\bin\Debug\net8.0\Master C#.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.AssemblyInfoInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.AssemblyInfo.cs
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.csproj.CoreCompileInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\refint\Master C#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\Master C#.genruntimeconfig.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\Master C#\obj\Debug\net8.0\ref\Master C#.dll

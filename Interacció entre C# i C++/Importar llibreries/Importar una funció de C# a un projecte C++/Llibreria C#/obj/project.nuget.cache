@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "q1lHnnWlOYk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAPÍTOL_1\\MyLibraryC#\\MyLibraryC#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marcm\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\9.0.2\\microsoft.dotnet.ilcompiler.9.0.2.nupkg.sha512",
+    "C:\\Users\\marcm\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.13\\microsoft.net.illink.tasks.8.0.13.nupkg.sha512",
+    "C:\\Users\\marcm\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\9.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

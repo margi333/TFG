@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova_TFG.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            BackgroundColor="White"
+            Spacing="25">
+
+            <Label
+                Text="Introdueix dos números"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <HorizontalStackLayout  HorizontalOptions="Center" Spacing="100">
+                <Entry
+                Style="{StaticResource SubHeadline}"
+                x:Name="Numero1"
+                TextColor="Black"
+                Placeholder="Número 1"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2" />
+
+                <Entry
+                Style="{StaticResource SubHeadline}"
+                x:Name="Numero2"
+                TextColor="Black"
+                Placeholder="Número 2"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="btnSuma"
+                Text="Sumar" 
+                Clicked="OnBtnSumaClicked"
+                HorizontalOptions="Fill" />
+
+            <Entry
+                Style="{StaticResource SubHeadline}"
+                x:Name="NumeroR"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                Placeholder="Resultat"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Image
+                Source="urv2.png"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

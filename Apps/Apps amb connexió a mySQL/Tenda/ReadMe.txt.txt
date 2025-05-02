@@ -1,0 +1,1 @@
+En aquest projecte podreu trovar una app d'una tenda de roba, la qual mitançant un login podem conseguir que es quedi emmagatzemat a una base de dades remota una comanda de roba, per posteriormente ser enviada al domicili

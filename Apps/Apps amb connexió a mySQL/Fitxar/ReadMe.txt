@@ -1,0 +1,1 @@
+En aquest projecte podreu trovar una app per a que els treballadors d'una empresa fitxin la seva jornada laboral. Aquesta aplicación també funciona amb un login per a identificar al treballador.

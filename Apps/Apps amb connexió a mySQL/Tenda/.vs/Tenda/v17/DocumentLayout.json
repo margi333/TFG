@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marcm\\Escritorio\\Tenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\classes\\informacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:classes\\informacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\newuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\newuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\newuser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\newuser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\classes\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:classes\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\p\u00E0gines\\finestraemergent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:p\u00E0gines\\finestraemergent.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|c:\\users\\marcm\\escritorio\\tenda\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{4E98FDCF-8533-41F5-B1D8-8DE7D8535464}|Tenda.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:56:36.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:22:29.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\NewUser.xaml.cs",
+              "RelativeDocumentMoniker": "P\u00E0gines\\NewUser.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\NewUser.xaml.cs",
+              "RelativeToolTip": "P\u00E0gines\\NewUser.xaml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:41:20.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewUser.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\NewUser.xaml",
+              "RelativeDocumentMoniker": "P\u00E0gines\\NewUser.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\NewUser.xaml",
+              "RelativeToolTip": "P\u00E0gines\\NewUser.xaml",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-22T09:29:51.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "P\u00E0gines\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Home.xaml.cs",
+              "RelativeToolTip": "P\u00E0gines\\Home.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:00:59.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:02:26.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Informacio.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\Classes\\Informacio.cs",
+              "RelativeDocumentMoniker": "Classes\\Informacio.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\Classes\\Informacio.cs",
+              "RelativeToolTip": "Classes\\Informacio.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T08:55:43.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-09T08:08:57.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FinestraEmergent.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\FinestraEmergent.xaml.cs",
+              "RelativeDocumentMoniker": "P\u00E0gines\\FinestraEmergent.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\FinestraEmergent.xaml.cs",
+              "RelativeToolTip": "P\u00E0gines\\FinestraEmergent.xaml.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwFoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:07:31.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "P\u00E0gines\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Login.xaml.cs",
+              "RelativeToolTip": "P\u00E0gines\\Login.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:05:27.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Home.xaml",
+              "RelativeDocumentMoniker": "P\u00E0gines\\Home.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Home.xaml",
+              "RelativeToolTip": "P\u00E0gines\\Home.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-08T15:03:48.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Login.xaml",
+              "RelativeDocumentMoniker": "P\u00E0gines\\Login.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\P\u00E0gines\\Login.xaml",
+              "RelativeToolTip": "P\u00E0gines\\Login.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-08T12:45:16.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-04-08T09:42:19.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\Tenda\\Classes\\Conexion.cs",
+              "RelativeDocumentMoniker": "Classes\\Conexion.cs",
+              "ToolTip": "C:\\Users\\marcm\\Escritorio\\Tenda\\Classes\\Conexion.cs",
+              "RelativeToolTip": "Classes\\Conexion.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T09:24:26.758Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

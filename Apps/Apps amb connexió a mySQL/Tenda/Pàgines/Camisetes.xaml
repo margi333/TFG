@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tenda.Camisetes"
+             xmlns:local="clr-namespace:Tenda"
+             Title="Camisetes">
+    <AbsoluteLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <HorizontalStackLayout
+        VerticalOptions="Center"
+        Spacing="30"
+        HorizontalOptions="Center">
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+        <Label 
+            Text="Samarreta Nike"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image
+            Source="camiseta_nike.jpg"
+            HeightRequest="150"
+            Aspect="AspectFit" />
+
+        <Button
+            x:Name="NikeBtn"
+            Text="Comprobar disponibilitat" 
+            Clicked="NikeBtnClicked"
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text="Samarreta Adidas"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="camiseta_adidas.jpg"
+                HeightRequest="150"
+                Aspect="AspectFit" />
+
+            <Button
+                x:Name="AdidasBtn"
+                Text="Comprobar disponibilitat" 
+                Clicked="AdidasBtnClicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text="Samarreta Puma"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="camiseta_puma.jpg"
+                HeightRequest="150"
+                Aspect="AspectFit" />
+
+            <Button
+                x:Name="PumaBtn"
+                Text="Comprobar disponibilitat" 
+                Clicked="PumaBtnClicked"
+                HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <local:FinestraEmergent x:Name="popup" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" IsVisible="False" />
+    </AbsoluteLayout>
+</ContentPage>

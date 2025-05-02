@@ -1,0 +1,14 @@
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.AssemblyInfoInputs.cache
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.AssemblyInfo.cs
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.csproj.CoreCompileInputs.cache
+C:\Users\marcm\Escritorio\Slave APP\bin\Debug\net9.0\Slave APP.exe
+C:\Users\marcm\Escritorio\Slave APP\bin\Debug\net9.0\Slave APP.deps.json
+C:\Users\marcm\Escritorio\Slave APP\bin\Debug\net9.0\Slave APP.runtimeconfig.json
+C:\Users\marcm\Escritorio\Slave APP\bin\Debug\net9.0\Slave APP.dll
+C:\Users\marcm\Escritorio\Slave APP\bin\Debug\net9.0\Slave APP.pdb
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.dll
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\refint\Slave APP.dll
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.pdb
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\Slave APP.genruntimeconfig.cache
+C:\Users\marcm\Escritorio\Slave APP\obj\Debug\net9.0\ref\Slave APP.dll

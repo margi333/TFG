@@ -1,0 +1,4 @@
+C:\Users\marcm\Escritorio\Prova TFG\bin\Release\net9.0-android\publish\com.companyname.provatfg-Signed.aab
+C:\Users\marcm\Escritorio\Prova TFG\bin\Release\net9.0-android\publish\com.companyname.provatfg.aab
+C:\Users\marcm\Escritorio\Prova TFG\bin\Release\net9.0-android\publish\com.companyname.provatfg-Signed.apk
+C:\Users\marcm\Escritorio\Prova TFG\bin\Release\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll

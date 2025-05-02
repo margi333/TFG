@@ -1,0 +1,1 @@
+En aquesta carpeta podreu trobar projectes on interactúen C++ i C#

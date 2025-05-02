@@ -1,0 +1,11 @@
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\bin\Debug\net8.0\MyLibraryC#.deps.json
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\bin\Debug\net8.0\MyLibraryC#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\bin\Debug\net8.0\MyLibraryC#.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.AssemblyInfoInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.AssemblyInfo.cs
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.csproj.CoreCompileInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\refint\MyLibraryC#.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\MyLibraryC#.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\CAPÍTOL_1\MyLibraryC#\obj\Debug\net8.0\ref\MyLibraryC#.dll

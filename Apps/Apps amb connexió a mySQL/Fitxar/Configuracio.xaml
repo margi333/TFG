@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fitxar.Configuracio"
+             Title="Configuracio">
+    <VerticalStackLayout
+BackgroundColor="White"
+VerticalOptions="Center"
+HorizontalOptions="Center"
+Spacing="25">
+
+        <!-- Contrasenya 1 -->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+        Text="Introdueix una nova contrasenya:"
+        WidthRequest="130"
+        HorizontalTextAlignment="End"
+        VerticalTextAlignment="Center"
+        Style="{StaticResource SubHeadline}"
+        FontSize="18"
+        SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+        x:Name="Contrasenya1"
+        TextChanged="Contrasenya1_TextChanged"
+        TextColor="Black"
+        Placeholder="Escriu aquí la contrasenya"
+        HorizontalOptions="Center"/>
+            <Label
+        Text=""
+        x:Name="val_contrasenya1"
+        Style="{StaticResource SubHeadline}"
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+        SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+
+        <!-- Contrasenya 2-->
+        <HorizontalStackLayout Padding="30,0" HorizontalOptions="Center" Spacing="25">
+            <Label
+        Text="Repeteix la contrasenya:"
+        WidthRequest="130"
+        FontSize="18"
+        HorizontalTextAlignment="End"
+        VerticalTextAlignment="Center"
+        Style="{StaticResource SubHeadline}"
+        SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+        x:Name="Contrasenya2"
+        TextChanged="Contrasenya2_TextChanged"
+        TextColor="Black"
+        Placeholder="Escriu aquí la contrasenya"
+        HorizontalOptions="Center"/>
+            <Label
+        Text=""
+        x:Name="val_contrasenya2"
+        Style="{StaticResource SubHeadline}"
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+        SemanticProperties.HeadingLevel="Level1" />
+        </HorizontalStackLayout>
+        <Button
+        x:Name="ContrasenyaBtn"
+        Text="Cambiar Contrasenya" 
+        Clicked="ContrasenyaBtnClicked"
+        HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

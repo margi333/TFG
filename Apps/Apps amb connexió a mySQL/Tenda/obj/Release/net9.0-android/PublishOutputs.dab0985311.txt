@@ -1,0 +1,4 @@
+C:\Users\marcm\Escritorio\Tenda\bin\Release\net9.0-android\publish\com.companyname.tenda-Signed.aab
+C:\Users\marcm\Escritorio\Tenda\bin\Release\net9.0-android\publish\com.companyname.tenda.aab
+C:\Users\marcm\Escritorio\Tenda\bin\Release\net9.0-android\publish\com.companyname.tenda-Signed.apk
+C:\Users\marcm\Escritorio\Tenda\bin\Release\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll
