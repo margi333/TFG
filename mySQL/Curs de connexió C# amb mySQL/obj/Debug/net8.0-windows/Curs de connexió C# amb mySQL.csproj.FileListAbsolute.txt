@@ -1,0 +1,20 @@
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\Curs de connexió C# amb mySQL.exe
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\Curs de connexió C# amb mySQL.deps.json
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\Curs de connexió C# amb mySQL.runtimeconfig.json
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\Curs de connexió C# amb mySQL.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\Curs de connexió C# amb mySQL.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\bin\Debug\net8.0-windows\MySql.Data.xml
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.csproj.AssemblyReference.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs_de_connexió_C__amb_mySQL.Form1.resources
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.csproj.GenerateResource.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.AssemblyInfoInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.AssemblyInfo.cs
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.csproj.CoreCompileInputs.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de .DB4BEEB7.Up2Date
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\refint\Curs de connexió C# amb mySQL.dll
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.pdb
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\Curs de connexió C# amb mySQL.genruntimeconfig.cache
+C:\Users\marcm\OneDrive\Desktop\TFG\C# + mySQL\Curs de connexió C# amb mySQL\obj\Debug\net8.0-windows\ref\Curs de connexió C# amb mySQL.dll
