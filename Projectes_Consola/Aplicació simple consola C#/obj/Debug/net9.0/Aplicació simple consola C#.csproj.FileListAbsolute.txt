@@ -1,0 +1,14 @@
+C:\Users\marcm\TFG\Aplicació simple consola C#\bin\Debug\net9.0\Aplicació simple consola C#.exe
+C:\Users\marcm\TFG\Aplicació simple consola C#\bin\Debug\net9.0\Aplicació simple consola C#.deps.json
+C:\Users\marcm\TFG\Aplicació simple consola C#\bin\Debug\net9.0\Aplicació simple consola C#.runtimeconfig.json
+C:\Users\marcm\TFG\Aplicació simple consola C#\bin\Debug\net9.0\Aplicació simple consola C#.dll
+C:\Users\marcm\TFG\Aplicació simple consola C#\bin\Debug\net9.0\Aplicació simple consola C#.pdb
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.AssemblyInfoInputs.cache
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.AssemblyInfo.cs
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.csproj.CoreCompileInputs.cache
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.dll
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\refint\Aplicació simple consola C#.dll
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.pdb
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\Aplicació simple consola C#.genruntimeconfig.cache
+C:\Users\marcm\TFG\Aplicació simple consola C#\obj\Debug\net9.0\ref\Aplicació simple consola C#.dll
