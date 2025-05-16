@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prova TFG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cf1bd1fe939bad30a44e29dfe7c76f8834d0ec5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prova TFG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prova TFG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

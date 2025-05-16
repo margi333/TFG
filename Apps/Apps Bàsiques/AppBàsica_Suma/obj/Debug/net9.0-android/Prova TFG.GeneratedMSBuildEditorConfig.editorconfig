@@ -12,37 +12,37 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Prova_TFG
-build_property.ProjectDir = C:\Users\marcm\Escritorio\Prova TFG\
+build_property.ProjectDir = C:\Users\marcm\Downloads\TFG\Apps\Apps Bàsiques\AppBàsica_Suma\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/marcm/Escritorio/Prova TFG/App.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps Bàsiques/AppBàsica_Suma/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Prova_TFG.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/marcm/Escritorio/Prova TFG/AppShell.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps Bàsiques/AppBàsica_Suma/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Prova_TFG.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/marcm/Escritorio/Prova TFG/MainPage.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps Bàsiques/AppBàsica_Suma/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Prova_TFG.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/marcm/Escritorio/Prova TFG/Resources/Styles/Colors.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps Bàsiques/AppBàsica_Suma/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Prova_TFG.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/marcm/Escritorio/Prova TFG/Resources/Styles/Styles.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps Bàsiques/AppBàsica_Suma/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Prova_TFG.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

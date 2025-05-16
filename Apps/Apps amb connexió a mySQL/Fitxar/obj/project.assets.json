@@ -38462,11 +38462,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcm\\Escritorio\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\Fitxar.csproj",
+      "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\Fitxar.csproj",
       "projectName": "Fitxar",
-      "projectPath": "C:\\Users\\marcm\\Escritorio\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\Fitxar.csproj",
+      "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\Fitxar.csproj",
       "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcm\\Escritorio\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\obj\\",
+      "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Apps amb connexió a mySQL\\Fitxar\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

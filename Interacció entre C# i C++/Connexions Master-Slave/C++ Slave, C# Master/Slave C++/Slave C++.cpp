@@ -1,35 +1,35 @@
-#include <iostream>
-#include "Header.h"
+#include <iostream>       // Biblioteca per a operacions d'entrada/sortida per consola
+#include "Header.h"       // Arxiu d'encapçalament on es declaren variables globals i constants
 
-//Envia el código de confirmación
+// Funció que envia el codi de confirmació ACK (0x06) al client
 int server_sendACK(SOCKET clientSck)
 {
     int nBytes;
-    char buf = 0x06;
+    char buf = 0x06;  // ACK (Acknowledge), codi ASCII per confirmar recepció
 
-    nBytes = send(clientSck, &buf, 1, 0);
+    nBytes = send(clientSck, &buf, 1, 0);  // Envia 1 byte al client
     if (nBytes == SOCKET_ERROR)
     {
         printf("send ACK failed with error: %d\n", WSAGetLastError());
-        return 1;
+        return 1;  // Retorna error
     }
-    return 0;
+    return 0; // Enviament correcte
 }
 
-
+// Funció que obre i configura el servidor en el port indicat
 bool server_open(char* port)
 {
-
     WSADATA wsaData;
     int iResult;
 
+    // Inicialització de sockets com a invàlids
     g_listenSocket = INVALID_SOCKET;
     g_clientSocket = INVALID_SOCKET;
-
     g_result = NULL;
+
     struct addrinfo hints;
 
-    // Initialize Winsock
+    // Inicialitza la llibreria WinSock
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (iResult != 0)
     {
@@ -37,13 +37,14 @@ bool server_open(char* port)
         return true;
     }
 
-    ZeroMemory(&hints, sizeof(hints)); // Condicions inicials a 0
-    hints.ai_family = AF_INET;
-    hints.ai_socktype = SOCK_STREAM;
-    hints.ai_protocol = IPPROTO_TCP;
-    hints.ai_flags = AI_PASSIVE;
+    // Configura la informació de la connexió
+    ZeroMemory(&hints, sizeof(hints)); // Neteja la memòria de la estructura hints
+    hints.ai_family = AF_INET;         // IPv4
+    hints.ai_socktype = SOCK_STREAM;   // Tipus TCP
+    hints.ai_protocol = IPPROTO_TCP;   // Protocol TCP
+    hints.ai_flags = AI_PASSIVE;       // Accepta connexions entrants
 
-    // Resolve the server address and port
+    // Resol la IP i el port del servidor
     iResult = getaddrinfo("192.168.68.105", port, &hints, &g_result);
     if (iResult != 0)
     {
@@ -51,7 +52,7 @@ bool server_open(char* port)
         return true;
     }
 
-    // Create a SOCKET for connecting to client
+    // Crea el socket d'escolta per connexions entrants
     g_listenSocket = socket(g_result->ai_family, g_result->ai_socktype, g_result->ai_protocol);
     if (g_listenSocket == INVALID_SOCKET)
     {
@@ -59,8 +60,7 @@ bool server_open(char* port)
         return true;
     }
 
-    // Setup the TCP listening socket
-    // associates a local address with a socket.
+    // Associa el socket amb l'adreça IP i el port
     iResult = bind(g_listenSocket, g_result->ai_addr, (int)g_result->ai_addrlen);
     if (iResult == SOCKET_ERROR)
     {
@@ -70,40 +70,42 @@ bool server_open(char* port)
 
     g_result = NULL;
 
-    // places a socket in a state in which it is listening for an incoming connection.
+    // Posa el socket en mode escolta per a connexions entrants
     iResult = listen(g_listenSocket, SOMAXCONN);
     if (iResult == SOCKET_ERROR)
     {
         printf("listen failed with error: %d\n", WSAGetLastError());
         return true;
     }
-    return 0;
+
+    return 0; // Tot correcte
 }
 
-//Se cierra el servidor
+// Funció que tanca el servidor i allibera recursos
 void server_close()
 {
     if (g_result != NULL)
-        freeaddrinfo(g_result);
+        freeaddrinfo(g_result);           // Allibera la memòria d'adreces
     if (g_clientSocket != INVALID_SOCKET)
-        closesocket(g_clientSocket);
-    // No longer need server socket
+        closesocket(g_clientSocket);     // Tanca el socket del client
     if (g_listenSocket != INVALID_SOCKET)
-        closesocket(g_listenSocket);
-    // cleanup
-    WSACleanup();
+        closesocket(g_listenSocket);     // Tanca el socket del servidor
+
+    WSACleanup();                        // Finalitza l'ús de la llibreria WinSock
 }
 
-//Recibe un paquete de información y retorna ACK si es correcto
-//En buffer queda el paquete recibido cuyo tamaño se situa en len
-//Retorna 1 si error
+// Funció per rebre un paquet del client i enviar ACK si s’ha rebut correctament
+// El buffer conté les dades rebudes i len retorna la seva mida
 int server_recvPack(SOCKET clientSck, char* buffer, int* len)
 {
-    int recvBufLen = DEFAULT_BUFLEN;
+    int recvBufLen = DEFAULT_BUFLEN;  // Longitud màxima del buffer
     int nBytes;
+
+    // Rep les dades del client
     nBytes = recv(clientSck, buffer, recvBufLen, 0);
     if (nBytes > 0)
     {
+        // Si la recepció és correcta, envia ACK i guarda la mida rebuda
         if (server_sendACK(clientSck) == 0)
         {
             *len = nBytes;
@@ -112,7 +114,7 @@ int server_recvPack(SOCKET clientSck, char* buffer, int* len)
         else return 1;
     }
     else if (nBytes == 0) {
-        printf("Warning: no information received\n");
+        printf("Warning: no information received\n");  // Connexió oberta però sense dades
     }
     else
     {
@@ -122,17 +124,12 @@ int server_recvPack(SOCKET clientSck, char* buffer, int* len)
     return 0;
 }
 
-
-//Se está a la espera de que se conecte un cliente. 
-//Luego de la conexión se entra en un bucle:
-// 1) se espera a la recepción una orden
-// 2) Se evalua y ejecuta la orden
-//Retorna true si error o se debe cerrar el servidor
+// Funció principal que espera una connexió de client i processa les ordres rebudes
 bool server_attnSocket()
 {
     int iResult, ret;
 
-    // Accept a client socket
+    // Accepta una connexió entrant
     g_clientSocket = accept(g_listenSocket, NULL, NULL);
     if (g_clientSocket == INVALID_SOCKET)
     {
@@ -140,43 +137,54 @@ bool server_attnSocket()
         return true;
     }
 
+    // Bucle principal per processar ordres contínuament
     while (true)
     {
         int recvBufLen;
-        char buffer[3];
-        //server waiting for order
+        char buffer[3]; // El paquet conté 3 bytes: num1, num2, operació
+
+        // Espera a rebre una ordre del client
         if (server_recvPack(g_clientSocket, buffer, &recvBufLen) != 0)
             return true;
+
+        // Extracció dels valors del buffer
         int num1 = buffer[0];
         int num2 = buffer[1];
         int operacio = buffer[2];
+
+        // Processament segons el codi d’operació
         switch (operacio)
         {
-        case 1:
-            printf("Els numeros rebuts son: %d, %d. La suma equival a %d", num1, num2, num1 + num2);
+        case 1: // Suma
+            printf("Els numeros rebuts son: %d, %d. La suma equival a %d\n", num1, num2, num1 + num2);
             break;
-        case 2:
-            printf("Els numeros rebuts son: %d, %d. La resta equival a %d", num1, num2, num1 - num2);
+        case 2: // Resta
+            printf("Els numeros rebuts son: %d, %d. La resta equival a %d\n", num1, num2, num1 - num2);
+            break;
+        default: // Operació no reconeguda
+            printf("Operació desconeguda: %d\n", operacio);
             break;
         }
     }
 }
 
-
+// Punt d'entrada principal del programa
 int main()
 {
     printf("Server: hello world!\n\n");
     int resposta = 0;
 
-    //Se activa el servidor
+    // Inicialitza el servidor en el port 27643
     if (server_open((char*)"27643") == true)
     {
         printf("Error: server in not ready\n");
         return 1;
     }
-    if (server_attnSocket())//blocking
+
+    // Entra en mode d'atenció de connexions (bucle bloquejant)
+    if (server_attnSocket())
     {
-        server_close();
+        server_close();  // Tanca el servidor si hi ha error o es finalitza
         return 0;
     }
 }

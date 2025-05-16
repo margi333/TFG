@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aplicació simple consola C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf1bd1fe939bad30a44e29dfe7c76f8834d0ec5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aplicació simple consola C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aplicació simple consola C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

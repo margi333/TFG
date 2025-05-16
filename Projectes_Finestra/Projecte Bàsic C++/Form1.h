@@ -131,33 +131,45 @@ namespace CppCLRWinFormsProject {
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void btnOperacio_Click(System::Object^ sender, System::EventArgs^ e) 
+		   // Mètode que s'executa quan l'usuari fa clic al botó per realitzar una operació aritmètica (suma o resta)
+	private: System::Void btnOperacio_Click(System::Object^ sender, System::EventArgs^ e)
 	{
+		// Es recuperen les cadenes introduïdes als TextBox i es converteixen a std::string
 		string num1 = this->toStandardString(txtNum1->Text);
 		string num2 = this->toStandardString(txtNum2->Text);
+
 		try
 		{
+			// Conversió de les cadenes a enters usant la funció stoi de C++
 			int n1 = stoi(num1);
 			int n2 = stoi(num2);
+
+			// S’utilitza un switch per identificar quina operació s’ha seleccionat al ComboBox
 			switch (ComboBox->SelectedIndex)
 			{
-			case 0:
-				MessageBox::Show("La suma de " + n1 +" + " + n2 + " = " + (n1+n2));
+			case 0: // Cas de la suma
+				MessageBox::Show("La suma de " + n1 + " + " + n2 + " = " + (n1 + n2));
 				break;
-			case 1:
+
+			case 1: // Cas de la resta
 				MessageBox::Show("La resta de " + n1 + " - " + n2 + " = " + (n1 - n2));
 				break;
-			default:
+
+			default: // Si no s’ha seleccionat cap opció vàlida
 				MessageBox::Show("Selecciona una operació");
 				break;
 			}
 		}
 		catch (Exception^ ex)
 		{
+			// Captura i mostra qualsevol excepció (com errors de conversió)
 			MessageBox::Show("Error: " + ex->Message);
 		}
+
+		// Es netegen els camps després de l’operació
 		Clean();
 	}
+
 	private: static string toStandardString(System::String^ string)
 	{
 		using System::Runtime::InteropServices::Marshal;

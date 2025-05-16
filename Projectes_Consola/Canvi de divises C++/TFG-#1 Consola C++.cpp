@@ -1,40 +1,47 @@
-// TFG-#1 Consola C++.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// Arxiu principal del programa (TFG - aplicació de consola)
+// Conté la funció main() que és el punt d’entrada del programa
 
-#include <iostream>
-#include "encabezado.h"
-#include <conio.h>
-#include <windows.h>
+#include <iostream>     // Entrada/sortida per consola
+#include "encabezado.h" // Inclou la definició de la classe 'operacio'
+#include <conio.h>      // Per funcions de lectura de teclat sense enter (_getch(), _kbhit())
+#include <windows.h>    // Funcions del sistema per Windows
 
-#define uchar unsigned char
-#define uint unsigned int
+#define uchar unsigned char // Alias per uchar (unsigned char)
+#define uint unsigned int   // Alias per uint (unsigned int)
 
 int main()
 {
-    bool end = false;
-    bool trama_ok = false;
-    uchar cadena[10];
-    int i = 0;
-    operacio Obj;
+    bool end = false;         // Control per acabar el programa
+    bool trama_ok = false;    // Control per saber si l’entrada s’ha completat
+    uchar cadena[10];         // Array per emmagatzemar els caràcters escrits per l’usuari
+    int i = 0;                // Índex de la cadena
+    operacio Obj;             // Objecte per fer la conversió de divises
+
     while (!end)
     {
         printf("Escriu import de la divisa que vulguis cambiar:\n\r");
+
+        // --- LECTURA DE CARÀCTERS UN A UN ---
         do
         {
-            if (_kbhit())
+            if (_kbhit()) // Si s’ha premut una tecla...
             {
-                uchar a = _getch();
+                uchar a = _getch(); // ... es captura sense necessitat de prémer ENTER
+
                 switch (a)
                 {
-                case 27: //si es per ESC
+                case 27: // Tecla ESC → sortir del programa
                     end = true;
                     trama_ok = true;
                     break;
-                case 13: //si es prem ENTER
+
+                case 13: // Tecla ENTER → finalitzar entrada de dades
                     trama_ok = true;
                     printf("\n\r");
                     break;
+
                 default:
+                    // Emmagatzema el caràcter a l’array i el mostra per consola
                     cadena[i] = a;
                     printf("%c", a);
                     i++;
@@ -42,49 +49,54 @@ int main()
                 }
             }
         } while (!trama_ok);
+
+        // Si l’usuari ha premut ESC, es finalitza el programa
         if (end)
         {
-            printf("Aplicacio finalitzada\n\r");
+            printf("Aplicació finalitzada\n\r");
             return 0;
         }
+
+        // --- VALIDACIÓ I CONVERSIÓ DE LA CADENA ---
         char* end;
         trama_ok = false;
+
+        // Converteix la cadena introduïda a float (fins a la primera lletra)
         float valor = strtof((const char*)cadena, &end);
-        if (*end == '\0' || valor < 0) 
+
+        // Si la conversió ha fallat o el valor és negatiu
+        if (*end == '\0' || valor < 0)
         {
-            printf("Import introduit no valid\n\r");
+            printf("Import introduït no vàlid\n\r");
         }
-        else 
+        else
         {
-            if (cadena[i-1] == 'e')
+            // --- IDENTIFICACIÓ DE LA DIVISA ---
+            if (cadena[i - 1] == 'e')
             {
-                printf("El valor introduit es %.2f e --> %.2f d \n \r\n\r", valor, Obj.EuroToDollar(valor));
+                // Si l'últim caràcter és 'e', es converteix d’euros a dòlars
+                printf("El valor introduït és %.2f e --> %.2f d\n\r\n\r", valor, Obj.EuroToDollar(valor));
             }
-            else if(cadena[i-1] == 'd')
+            else if (cadena[i - 1] == 'd')
             {
-                printf("El valor introduit es %.2f d --> %.2f e\n \r\n\r", valor, Obj.DollarToEuro(valor));
+                // Si l'últim caràcter és 'd', es converteix de dòlars a euros
+                printf("El valor introduït és %.2f d --> %.2f e\n\r\n\r", valor, Obj.DollarToEuro(valor));
             }
             else
             {
-                printf("No s'ha detectat la divisa o no suportem aquesta divisa encara\n \r\n \r");
+                // Si la divisa no és reconeguda
+                printf("No s'ha detectat la divisa o no suportem aquesta divisa encara\n\r\n\r");
             }
         }
+
+        // Neteja l’array de caràcters per la següent entrada
         for (int j = 0; j < i; j++)
         {
             cadena[j] = '\0';
         }
-        i = 0;
+
+        i = 0; // Reinicia l’índex
     }
 
-    return 0;
+    return 0; // Finalització correcta del programa
 }
-
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln

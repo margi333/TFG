@@ -156,208 +156,235 @@ namespace CppCLRWinFormsProject {
 			this->PerformLayout();
 
 		}
-	private: System::Void btnEuro_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		string cadena = this->toStandardString(txtValor->Text);
-		string divisa_inicial = "";
-		string divisa_final = "";
-		string import_seleccionat = "";
-		string cambi = "";
-		string resultat = "";
-		MyForm^ formSecundari = gcnew MyForm();
-		float valor = 0;
-		try
-		{
-			valor = std::stof(cadena);
-		}
-		catch (System::Exception^ e)
-		{
-			MessageBox::Show("Error: " + e->Message);
-			Netejar();
-			return;
-		}
-		switch (comboBox1->SelectedIndex)
-		{
-		case 0:
-			divisa_inicial = "€";
-			divisa_final = "€";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.00";
-			resultat = std::to_string(valor);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 1:
-			cambi_dolar = valor / 1.05;
-			divisa_inicial = "$";
-			divisa_final = "€";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "0.95";
-			resultat = std::to_string(cambi_dolar);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 2:
-			cambi_lliura = valor * 1.21;
-			divisa_inicial = "£";
-			divisa_final = "€";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.21";
-			resultat = std::to_string(cambi_lliura);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		default:
-			MessageBox::Show("Selecciona una divisa disponible");
-			break;
-		}
-		Netejar();
-	}
-	void Netejar()
-		   {
-			   txtValor->Text = "";
-		   }
-	private: static string toStandardString(System::String^ string)
-	{
-		using System::Runtime::InteropServices::Marshal;
-		System::IntPtr pointer = Marshal::StringToHGlobalAnsi(string);
-		char* charPointer = reinterpret_cast<char*>(pointer.ToPointer());
-		std::string returnString(charPointer, string->Length);
-		Marshal::FreeHGlobal(pointer);
-		return returnString;
-	}
-	private: System::Void btnDolar_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		string cadena = this->toStandardString(txtValor->Text);
-		string divisa_inicial = "";
-		string divisa_final = "";
-		string import_seleccionat = "";
-		string cambi = "";
-		string resultat = "";
-		MyForm^ formSecundari = gcnew MyForm(); //gcnew és com new però per objectes gestionats per .NET
-		float valor = 0;
-		try
-		{
-			valor = std::stof(cadena);
-		}
-		catch (System::Exception^ e)
-		{
-			MessageBox::Show("Error: " + e->Message);
-			Netejar();
-			return;
-		}
-		switch (comboBox1->SelectedIndex)
-		{
-		case 0:
-			cambi_dolar = (double)(valor * 1.05);
-			divisa_inicial = "€";
-			divisa_final = "$";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.05";
-			resultat = std::to_string(cambi_dolar);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 1:
-			divisa_inicial = "$";
-			divisa_final = "$";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.00";
-			resultat = std::to_string(valor);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 2:
-			cambi_lliura = (double)(valor / 0.79);
-			divisa_inicial = "£";
-			divisa_final = "$";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.27";
-			resultat = std::to_string(cambi_lliura);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		default:
-			MessageBox::Show("Selecciona una divisa disponible");
-			break;
-		}
-		Netejar();
-	}
-	private: System::Void btnLliura_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-		string cadena = this->toStandardString(txtValor->Text);
-		string divisa_inicial = "";
-		string divisa_final = "";
-		string import_seleccionat = "";
-		string cambi = "";
-		string resultat = "";
-		MyForm^ formSecundari = gcnew MyForm();
-		float valor = 0;
-		try
-		{
-			valor = std::stof(cadena);
-		}
-		catch (System::Exception^ e)
-		{
-			MessageBox::Show("Error: " + e->Message);
-			Netejar();
-			return;
-		}
-		switch (comboBox1->SelectedIndex)
-		{
-		case 0:
-			cambi_euro = (double)(valor / 1.21);
-			divisa_inicial = "€";
-			divisa_final = "£";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "0.83";
-			resultat = std::to_string(cambi_euro);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 1:
-			cambi_dolar = (double)(valor * 0.79);
-			divisa_inicial = "$";
-			divisa_final = "£";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "0.79";
-			resultat = std::to_string(cambi_dolar);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		case 2:
-			divisa_inicial = "£";
-			divisa_final = "£";
-			import_seleccionat = std::to_string(valor);
-			import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
-			cambi = "1.00";
-			resultat = std::to_string(valor);
-			resultat = resultat.substr(0, resultat.find(".") + 3);
-			formSecundari->Show();
-			formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
-			break;
-		default:
-			MessageBox::Show("Selecciona una divisa disponible");
-			break;
-		}
-		Netejar();
-	}
+        // Mètode que s'executa quan es fa clic al botó "Convertir a Euros (€)"
+private: System::Void btnEuro_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    // Converteix el valor introduït en el TextBox a std::string
+    string cadena = this->toStandardString(txtValor->Text);
+
+    // Variables per definir les cadenes associades a la conversió
+    string divisa_inicial = "";
+    string divisa_final = "";
+    string import_seleccionat = "";
+    string cambi = "";
+    string resultat = "";
+
+    // Crea una instància del formulari secundari per mostrar els resultats
+    MyForm^ formSecundari = gcnew MyForm();
+
+    // Declara la variable per guardar el valor convertit
+    float valor = 0;
+
+    // Intenta convertir la cadena a float
+    try
+    {
+        valor = std::stof(cadena);
+    }
+    // Si hi ha una excepció, es mostra un missatge i es neteja el formulari
+    catch (System::Exception^ e)
+    {
+        MessageBox::Show("Error: " + e->Message);
+        Netejar();
+        return;
+    }
+
+    // Selecciona la divisa d'origen segons el valor seleccionat al comboBox
+    switch (comboBox1->SelectedIndex)
+    {
+    case 0: // Conversió de € a €
+        divisa_inicial = "€";
+        divisa_final = "€";
+        import_seleccionat = std::to_string(valor);
+        import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
+        cambi = "1.00";
+        resultat = std::to_string(valor);
+        resultat = resultat.substr(0, resultat.find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 1: // Conversió de $ a €
+        cambi_dolar = valor / 1.05;
+        divisa_inicial = "$";
+        divisa_final = "€";
+        import_seleccionat = std::to_string(valor);
+        import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
+        cambi = "0.95";
+        resultat = std::to_string(cambi_dolar);
+        resultat = resultat.substr(0, resultat.find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 2: // Conversió de £ a €
+        cambi_lliura = valor * 1.21;
+        divisa_inicial = "£";
+        divisa_final = "€";
+        import_seleccionat = std::to_string(valor);
+        import_seleccionat = import_seleccionat.substr(0, import_seleccionat.find(".") + 3);
+        cambi = "1.21";
+        resultat = std::to_string(cambi_lliura);
+        resultat = resultat.substr(0, resultat.find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    default: // Cap divisa seleccionada
+        MessageBox::Show("Selecciona una divisa disponible");
+        break;
+    }
+
+    // Neteja el camp de text
+    Netejar();
+}
+
+       // Mètode que s'executa quan es fa clic al botó "Convertir a Dòlars ($)"
+private: System::Void btnDolar_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    string cadena = this->toStandardString(txtValor->Text);
+    string divisa_inicial = "";
+    string divisa_final = "";
+    string import_seleccionat = "";
+    string cambi = "";
+    string resultat = "";
+    MyForm^ formSecundari = gcnew MyForm();
+    float valor = 0;
+
+    try
+    {
+        valor = std::stof(cadena);
+    }
+    catch (System::Exception^ e)
+    {
+        MessageBox::Show("Error: " + e->Message);
+        Netejar();
+        return;
+    }
+
+    switch (comboBox1->SelectedIndex)
+    {
+    case 0: // € a $
+        cambi_dolar = (double)(valor * 1.05);
+        divisa_inicial = "€";
+        divisa_final = "$";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "1.05";
+        resultat = std::to_string(cambi_dolar).substr(0, std::to_string(cambi_dolar).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 1: // $ a $
+        divisa_inicial = "$";
+        divisa_final = "$";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "1.00";
+        resultat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 2: // £ a $
+        cambi_lliura = (double)(valor / 0.79);
+        divisa_inicial = "£";
+        divisa_final = "$";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "1.27";
+        resultat = std::to_string(cambi_lliura).substr(0, std::to_string(cambi_lliura).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    default:
+        MessageBox::Show("Selecciona una divisa disponible");
+        break;
+    }
+
+    Netejar();
+}
+
+       // Mètode que s'executa quan es fa clic al botó "Convertir a Lliures (£)"
+private: System::Void btnLliura_Click(System::Object^ sender, System::EventArgs^ e)
+{
+    string cadena = this->toStandardString(txtValor->Text);
+    string divisa_inicial = "";
+    string divisa_final = "";
+    string import_seleccionat = "";
+    string cambi = "";
+    string resultat = "";
+    MyForm^ formSecundari = gcnew MyForm();
+    float valor = 0;
+
+    try
+    {
+        valor = std::stof(cadena);
+    }
+    catch (System::Exception^ e)
+    {
+        MessageBox::Show("Error: " + e->Message);
+        Netejar();
+        return;
+    }
+
+    switch (comboBox1->SelectedIndex)
+    {
+    case 0: // € a £
+        cambi_euro = (double)(valor / 1.21);
+        divisa_inicial = "€";
+        divisa_final = "£";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "0.83";
+        resultat = std::to_string(cambi_euro).substr(0, std::to_string(cambi_euro).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 1: // $ a £
+        cambi_dolar = (double)(valor * 0.79);
+        divisa_inicial = "$";
+        divisa_final = "£";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "0.79";
+        resultat = std::to_string(cambi_dolar).substr(0, std::to_string(cambi_dolar).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    case 2: // £ a £
+        divisa_inicial = "£";
+        divisa_final = "£";
+        import_seleccionat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        cambi = "1.00";
+        resultat = std::to_string(valor).substr(0, std::to_string(valor).find(".") + 3);
+        formSecundari->Show();
+        formSecundari->cambiarTxt(divisa_inicial, divisa_final, import_seleccionat + divisa_inicial, cambi, resultat + divisa_final);
+        break;
+
+    default:
+        MessageBox::Show("Selecciona una divisa disponible");
+        break;
+    }
+
+    Netejar();
+}
+
+       // Mètode auxiliar que neteja el TextBox del valor introduït per l'usuari
+       void Netejar()
+       {
+           txtValor->Text = "";
+       }
+
+       // Funció que converteix una cadena de .NET (System::String^) a una cadena de C++ (std::string)
+private: static string toStandardString(System::String^ string)
+{
+    using System::Runtime::InteropServices::Marshal;
+    System::IntPtr pointer = Marshal::StringToHGlobalAnsi(string);
+    char* charPointer = reinterpret_cast<char*>(pointer.ToPointer());
+    std::string returnString(charPointer, string->Length);
+    Marshal::FreeHGlobal(pointer);
+    return returnString;
+}
+
 #pragma endregion 
 private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
 }

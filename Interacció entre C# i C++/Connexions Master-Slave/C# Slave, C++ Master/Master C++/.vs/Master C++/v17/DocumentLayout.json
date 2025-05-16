@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\",
+  "WorkspaceRootPath": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|solutionrelative:Master C\u002B\u002B.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{329229FF-94A3-4784-B3BB-9A4A25D6E9C1}|Master C\u002B\u002B.vcxproj|solutionrelative:Master C\u002B\u002B.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,23 +28,24 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Master C\u002B\u002B.h",
-              "DocumentMoniker": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.h",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.h",
               "RelativeDocumentMoniker": "Master C\u002B\u002B.h",
-              "ToolTip": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.h",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.h",
               "RelativeToolTip": "Master C\u002B\u002B.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-06T10:39:45.141Z"
+              "WhenOpened": "2025-03-06T10:39:45.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Master C\u002B\u002B.cpp",
-              "DocumentMoniker": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp",
               "RelativeDocumentMoniker": "Master C\u002B\u002B.cpp",
-              "ToolTip": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\CAP\u00CDTOL_1\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\Master C\u002B\u002B\\Master C\u002B\u002B.cpp",
               "RelativeToolTip": "Master C\u002B\u002B.cpp",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAOcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAwPkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-06T10:37:17.382Z",
               "EditorCaption": ""

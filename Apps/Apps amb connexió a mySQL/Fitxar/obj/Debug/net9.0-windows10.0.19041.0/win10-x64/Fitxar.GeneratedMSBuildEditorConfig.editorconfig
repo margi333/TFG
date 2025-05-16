@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fitxar
-build_property.ProjectDir = C:\Users\marcm\Escritorio\TFG\Apps\Apps amb connexió a mySQL\Fitxar\
+build_property.ProjectDir = C:\Users\marcm\Downloads\TFG\Apps\Apps amb connexió a mySQL\Fitxar\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,43 +22,43 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/App.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/AppShell.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Configuracio.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Configuracio.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.Configuracio.xaml
 build_metadata.AdditionalFiles.TargetPath = Configuracio.xaml
 build_metadata.AdditionalFiles.RelativePath = Configuracio.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Fitxatge.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Fitxatge.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.Fitxatge.xaml
 build_metadata.AdditionalFiles.TargetPath = Fitxatge.xaml
 build_metadata.AdditionalFiles.RelativePath = Fitxatge.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/MainPage.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Resources/Styles/Colors.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/marcm/Escritorio/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Resources/Styles/Styles.xaml]
+[C:/Users/marcm/Downloads/TFG/Apps/Apps amb connexió a mySQL/Fitxar/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fitxar.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcm\\Escritorio\\Slave APP\\Slave APP.csproj": {}
+    "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\Slave APP\\Slave APP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcm\\Escritorio\\Slave APP\\Slave APP.csproj": {
+    "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\Slave APP\\Slave APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcm\\Escritorio\\Slave APP\\Slave APP.csproj",
+        "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\Slave APP\\Slave APP.csproj",
         "projectName": "Slave APP",
-        "projectPath": "C:\\Users\\marcm\\Escritorio\\Slave APP\\Slave APP.csproj",
+        "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\Slave APP\\Slave APP.csproj",
         "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcm\\Escritorio\\Slave APP\\obj\\",
+        "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\Slave APP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

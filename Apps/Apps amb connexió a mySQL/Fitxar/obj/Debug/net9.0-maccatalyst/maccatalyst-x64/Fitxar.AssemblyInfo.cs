@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fitxar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8a0b04783e98d14673dc763960ca415ce870c956")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cf1bd1fe939bad30a44e29dfe7c76f8834d0ec5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fitxar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fitxar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

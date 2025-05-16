@@ -26440,11 +26440,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcm\\Escritorio\\App Master\\App Master.csproj",
+      "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\App Master\\App Master.csproj",
       "projectName": "App Master",
-      "projectPath": "C:\\Users\\marcm\\Escritorio\\App Master\\App Master.csproj",
+      "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\App Master\\App Master.csproj",
       "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcm\\Escritorio\\App Master\\obj\\",
+      "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexió Master-Slave\\App Master\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

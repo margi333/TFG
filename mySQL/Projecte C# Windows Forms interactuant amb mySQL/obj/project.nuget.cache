@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ax7jlcT/hVU=",
+  "dgSpecHash": "g0rv9kn4NiI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\C# + mySQL\\#3 Curs C# i mySQL\\#3 Curs C# i mySQL.csproj",
+  "projectFilePath": "C:\\Users\\marcm\\Downloads\\TFG\\mySQL\\Projecte C# Windows Forms interactuant amb mySQL\\#3 Curs C# i mySQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marcm\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\marcm\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

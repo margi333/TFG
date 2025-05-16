@@ -1,17 +1,18 @@
-#include <iostream>
-#include <conio.h>
-#include "Master C++.h"
+#include <iostream>        // Entrada/sortida per consola
+#include <conio.h>         // Per llegir tecles amb _getch() i _kbhit()
+#include "Master C++.h"    // Arxiu d'encapçalament amb variables globals i definicions
 
+// Obre la connexió amb el servidor especificat
 bool client_open(char* serverName, char* port)
 {
-    g_connectSocket = INVALID_SOCKET;
+    g_connectSocket = INVALID_SOCKET;   // Inicialització del socket com a invàlid
     g_sResult = NULL;
 
     WSADATA wsaData;
     struct addrinfo* ptr = NULL, hints;
     int iResult;
 
-    // Initialize Winsock
+    // Inicialitza la llibreria WinSock
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (iResult != 0)
     {
@@ -19,39 +20,44 @@ bool client_open(char* serverName, char* port)
         return true;
     }
 
+    // Especificació de criteris per trobar adreces del servidor
     ZeroMemory(&hints, sizeof(hints));
     hints.ai_family = AF_UNSPEC;
-    hints.ai_socktype = SOCK_STREAM;
+    hints.ai_socktype = SOCK_STREAM;   // Connexió TCP
     hints.ai_protocol = IPPROTO_TCP;
 
-    // Resolve the server address and port
+    // Resolució d'adreça i port del servidor
     iResult = getaddrinfo(serverName, port, &hints, &g_sResult);
     if (iResult != 0)
     {
         printf("getaddrinfo failed with error: %d\n", iResult);
         return true;
     }
+
     return false;
 }
 
+// Tanca correctament la connexió i allibera recursos
 void client_close(void)
 {
     if (g_connectSocket)
         closesocket(g_connectSocket);
     g_connectSocket = NULL;
+
     if (g_sResult)
         freeaddrinfo(g_sResult);
     g_sResult = NULL;
-    WSACleanup();
+
+    WSACleanup();  // Finalitza l’ús de WinSock
 }
 
-
+// Intenta establir connexió amb el servidor
 int client_serverConnect()
 {
     int iResult;
     struct addrinfo* ptr = NULL;
 
-    // Intenta connectar-se a una de les adreces disponibles
+    // Recorre totes les adreces resoltes intentant connectar-se
     for (ptr = g_sResult; ptr != NULL; ptr = ptr->ai_next)
     {
         g_connectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
@@ -62,7 +68,6 @@ int client_serverConnect()
         }
 
         // Intenta connectar-se al servidor
-    
         iResult = connect(g_connectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
         if (iResult == SOCKET_ERROR)
         {
@@ -72,7 +77,7 @@ int client_serverConnect()
             continue;
         }
 
-        break; // Si la connexió té èxit, surt del bucle
+        break;  // Connexió establerta correctament
     }
 
     if (g_connectSocket == INVALID_SOCKET)
@@ -85,48 +90,51 @@ int client_serverConnect()
     return 0;
 }
 
-
+// Envia una trama de dades al servidor i espera una resposta ACK
 int client_sendPack(SOCKET clientSck, char* buffer, int len)
 {
     int nBytes;
     char recvBuf[DEFAULT_BUFLEN];
     int recvBufLen = DEFAULT_BUFLEN;
 
+    // Envia la trama
     nBytes = send(clientSck, buffer, len, 0);
     if (nBytes == SOCKET_ERROR)
     {
         printf("send failed with error: %d\n", WSAGetLastError());
         return 1;
     }
-    //    printf("Bytes sent: %d\n", nBytes);
+
+    // Espera una resposta del servidor
     nBytes = recv(clientSck, recvBuf, recvBufLen, 0);
     if (nBytes > 0)
     {
+        // Comprova si s’ha rebut l’ACK (0x06)
         if (!(nBytes == 1 && *recvBuf == ACK))
         {
             printf("ACK not received\n");
             return 1;
         }
     }
+
     return 0;
 }
-
-
-
 int main()
 {
     char buffer[DEFAULT_BUFLEN];
     int len;
+
     printf("Client: Hello World!\n");
-    //Se intenta establecer comunicación con el servidor que se
-    //situa en la misma máquina del cliente, en el port 27643
+
+    // Obre connexió amb el servidor (IP i port específics)
     if (client_open((char*)"192.168.68.105", (char*)"27643") == true)
         return 1;
-    //Se estblece una conexión con el servidor
+
+    // Estableix connexió amb el servidor
     if (client_serverConnect() != 0)
         return 1;
 
-
+    // Bucle principal per enviar operacions
     while (true)
     {
         printf("Introdueix un numero del 0 al 9\n\r");
@@ -136,18 +144,20 @@ int main()
         const char* apunt_n2 = &num2;
         const char* apunt_n3 = &num3;
         int n1, n2, n3;
+
+        // --- Entrada del primer número ---
         while (!num_valid)
         {
-            if (_kbhit())
+            if (_kbhit()) // Comprova si s’ha premut una tecla
             {
-                char a = _getch();
+                char a = _getch(); // Llegeix una tecla sense esperar Enter
                 if ((a < 48 || a > 57) && a != 13)
                 {
-                    printf("Introdueix un numero dins del rang\n\r");
+                    printf("Introdueix un número dins del rang\n\r");
                 }
-                else if (a == 13)
+                else if (a == 13) // Tecla Enter per sortir
                 {
-                    printf("Tancant connexio...");
+                    printf("Tancant connexió...");
                     client_close();
                     return 0;
                 }
@@ -160,8 +170,9 @@ int main()
         }
         n1 = atoi(apunt_n1);
 
+        // --- Entrada del segon número ---
         num_valid = false;
-        printf("Introdueix un segon numero del 0 al 9\n\r");
+        printf("Introdueix un segon número del 0 al 9\n\r");
         while (!num_valid)
         {
             if (_kbhit())
@@ -169,11 +180,11 @@ int main()
                 char a = _getch();
                 if ((a < 48 || a > 57) && a != 13)
                 {
-                    printf("Introdueix un numero dins del rang\n\r");
+                    printf("Introdueix un número dins del rang\n\r");
                 }
                 else if (a == 13)
                 {
-                    printf("Tancant connexio...");
+                    printf("Tancant connexió...");
                     client_close();
                     return 0;
                 }
@@ -186,6 +197,7 @@ int main()
         }
         n2 = atoi(apunt_n2);
 
+        // --- Selecció d'operació ---
         num_valid = false;
         printf("Vol fer una suma (1) o una resta(2)\n\r");
         while (!num_valid)
@@ -193,13 +205,13 @@ int main()
             if (_kbhit())
             {
                 char a = _getch();
-                if ((a < 49 || a > 50) && a != 13)
+                if ((a < 49 || a > 50) && a != 13) // Només 1 o 2
                 {
-                    printf("Introdueix un numero dins del rang\n\r");
+                    printf("Introdueix un número dins del rang\n\r");
                 }
                 else if (a == 13)
                 {
-                    printf("Tancant connexio...");
+                    printf("Tancant connexió...");
                     client_close();
                     return 0;
                 }
@@ -211,27 +223,27 @@ int main()
             }
         }
         n3 = atoi(apunt_n3);
-        //Tenim els números preparats. Ara prepararem la trama a enviar al slave
+
+        // --- Construcció de la trama a enviar ---
         int trama[3];
         int i = 0;
-        trama[i] = n1;
-        i++;
-        trama[i] = n2;
-        i++;
-        trama[i] = n3;
-        i++;
-        bool trama_ok = client_sendPack(g_connectSocket, (char *)trama, sizeof(trama));
+        trama[i++] = n1;
+        trama[i++] = n2;
+        trama[i++] = n3;
+
+        // Enviament de la trama al servidor
+        bool trama_ok = client_sendPack(g_connectSocket, (char*)trama, sizeof(trama));
         i = 0;
+
+        // Resultat de l’enviament
         if (trama_ok == TRUE) {
-            //ERROR DE RECEPCIÓN
             printf("Error: No s'ha pogut enviar l'ordre al servidor\n");
         }
         else if (trama_ok == FALSE) {
-            //ENVIO CORRECTE
             printf("Ordre enviada correctament\n\r\n\r");
         }
     }
-    client_close();
+
+    client_close(); // Tanca connexió (en cas que es surti del bucle)
     return 0;
 }
-

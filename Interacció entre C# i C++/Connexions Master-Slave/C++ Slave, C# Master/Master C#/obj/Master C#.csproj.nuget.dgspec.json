@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAPÍTOL_1\\Master C#\\Master C#.csproj": {}
+    "C:\\Users\\marcm\\Downloads\\TFG\\Interacció entre C# i C++\\Connexions Master-Slave\\C++ Slave, C# Master\\Master C#\\Master C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAPÍTOL_1\\Master C#\\Master C#.csproj": {
+    "C:\\Users\\marcm\\Downloads\\TFG\\Interacció entre C# i C++\\Connexions Master-Slave\\C++ Slave, C# Master\\Master C#\\Master C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAPÍTOL_1\\Master C#\\Master C#.csproj",
+        "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\Interacció entre C# i C++\\Connexions Master-Slave\\C++ Slave, C# Master\\Master C#\\Master C#.csproj",
         "projectName": "Master C#",
-        "projectPath": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAPÍTOL_1\\Master C#\\Master C#.csproj",
+        "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\Interacció entre C# i C++\\Connexions Master-Slave\\C++ Slave, C# Master\\Master C#\\Master C#.csproj",
         "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAPÍTOL_1\\Master C#\\obj\\",
+        "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\Interacció entre C# i C++\\Connexions Master-Slave\\C++ Slave, C# Master\\Master C#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

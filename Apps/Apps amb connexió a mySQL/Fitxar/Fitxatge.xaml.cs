@@ -11,13 +11,15 @@ public partial class Fitxatge : ContentPage
     private bool inici = true;
     public string Dia { get; set; }
     public string Hores { get; set; }
+
     public Fitxatge()
     {
         InitializeComponent();
-        BindingContext = new MainViewModel();
-        IniciarActualitzacioHora();
+        BindingContext = new MainViewModel(); // S'estableix el context de dades a la classe MainViewModel
+        IniciarActualitzacioHora(); // S'inicia el temporitzador que actualitza l'hora actual
     }
 
+    // Mètode que estableix un temporitzador per actualitzar l'hora cada segon
     private void IniciarActualitzacioHora()
     {
         var timer = Application.Current.Dispatcher.CreateTimer();
@@ -25,6 +27,8 @@ public partial class Fitxatge : ContentPage
         timer.Tick += (s, e) =>
         {
             HoraLabel.Text = DateTime.Now.ToString("HH:mm");
+
+            // Aquest fragment comprova si el temps és zero i estableix una preferència
             if (DateTime.Now.Equals(TimeSpan.Zero))
             {
                 Preferences.Set("fitxar", true);
@@ -32,20 +36,23 @@ public partial class Fitxatge : ContentPage
         };
         timer.Start();
     }
+
     bool fitxar_entrada = false;
+
+    // Mètode que s’executa quan l’usuari fa clic per fitxar entrada o sortida
     private void FitxarBtnClicked(object sender, EventArgs e)
     {
         if (Preferences.Get("fitxar", true))
         {
             if (!fitxar_entrada)
             {
+                // Si encara no s’ha fitxat l’entrada, es registra la fitxada d’entrada
                 fitxar_entrada = true;
                 MySqlConnection conexionBD = Conexion.conexion();
                 conexionBD.Open();
                 var app = Application.Current as App;
                 string tableName = Preferences.Get("DB", null);
 
-                // Fes servir interpolació per al nom de la taula
                 string sql = $"INSERT INTO {tableName} (dia, hora_entrada) VALUES (@dia, @hora_in);";
 
                 MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
@@ -57,6 +64,7 @@ public partial class Fitxatge : ContentPage
             }
             else
             {
+                // Si ja s’ha fitxat l’entrada, ara es registra la sortida
                 fitxar_entrada = false;
                 Preferences.Set("fitxar", false);
                 MySqlConnection conexionBD = Conexion.conexion();
@@ -77,9 +85,11 @@ public partial class Fitxatge : ContentPage
     }
 }
 
+// Classe que implementa el patró ViewModel per mantenir les dades sincronitzades amb la vista
 public class MainViewModel : INotifyPropertyChanged
 {
     public ObservableCollection<FitxatgeItem> Fitxades { get; set; } = new();
+
     private string? nom;
     public string? Nom
     {
@@ -94,6 +104,7 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    // Constructor que inicia la càrrega de dades de l’usuari i fitxatges
     public MainViewModel()
     {
         CarregarDadesAsync();
@@ -105,6 +116,7 @@ public class MainViewModel : INotifyPropertyChanged
         await CarregarFitxadesAsync();
     }
 
+    // Carrega el nom del treballador a partir de l'email desat a les preferències
     private async Task CarregarNomAsync()
     {
         MySqlConnection conexionBD = Conexion.conexion();
@@ -116,12 +128,13 @@ public class MainViewModel : INotifyPropertyChanged
         if (await reader.ReadAsync())
         {
             Nom = reader.GetString("nom_treballador");
-            app.Obj.nom = Nom; // actualitzar també l'objecte de l'app
+            app.Obj.nom = Nom; // S’actualitza també l’objecte global
         }
         await reader.CloseAsync();
         await conexionBD.CloseAsync();
     }
 
+    // Carrega les tres últimes fitxades de l’usuari
     private async Task CarregarFitxadesAsync()
     {
         MySqlConnection conexionBD = Conexion.conexion();
@@ -149,10 +162,12 @@ public class MainViewModel : INotifyPropertyChanged
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
+
     protected void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }
 
+// Classe que representa cada entrada de fitxatge (model de dades)
 public class FitxatgeItem
 {
     public string Dia { get; set; }

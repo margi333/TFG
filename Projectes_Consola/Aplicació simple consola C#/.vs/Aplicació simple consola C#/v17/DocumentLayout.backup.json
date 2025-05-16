@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marcm\\TFG\\Aplicaci\u00F3 simple consola C#\\",
+  "WorkspaceRootPath": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicaci\u00F3 simple consola C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|c:\\users\\marcm\\tfg\\aplicaci\u00F3 simple consola c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|c:\\users\\marcm\\downloads\\tfg\\projectes_consola\\aplicaci\u00F3 simple consola c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|c:\\users\\marcm\\tfg\\aplicaci\u00F3 simple consola c#\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|c:\\users\\marcm\\downloads\\tfg\\projectes_consola\\aplicaci\u00F3 simple consola c#\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DE6824B-D35E-4270-86FC-E902556C3DC7}|Aplicaci\u00F3 simple consola C#.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Aplicaci\u00F3 simple consola C#\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicaci\u00F3 simple consola C#\\Class1.cs",
               "RelativeDocumentMoniker": "Class1.cs",
-              "ToolTip": "C:\\Users\\marcm\\TFG\\Aplicaci\u00F3 simple consola C#\\Class1.cs",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicaci\u00F3 simple consola C#\\Class1.cs",
               "RelativeToolTip": "Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -41,11 +41,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Aplicaci\u00F3 simple consola C#\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicaci\u00F3 simple consola C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\marcm\\TFG\\Aplicaci\u00F3 simple consola C#\\Program.cs",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicaci\u00F3 simple consola C#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T09:59:01.539Z",
               "EditorCaption": ""

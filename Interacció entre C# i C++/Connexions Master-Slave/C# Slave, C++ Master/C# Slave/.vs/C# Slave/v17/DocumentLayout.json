@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAP\u00CDTOL_1\\C# Slave\\",
+  "WorkspaceRootPath": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\C# Slave\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E81B6F39-B71A-447E-85E2-536F0A414029}|C# Slave.csproj|c:\\users\\marcm\\onedrive\\desktop\\tfg\\cap\u00EDtol_1\\c# slave\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E81B6F39-B71A-447E-85E2-536F0A414029}|C# Slave.csproj|c:\\users\\marcm\\downloads\\tfg\\interacci\u00F3 entre c# i c\u002B\u002B\\connexions master-slave\\c# slave, c\u002B\u002B master\\c# slave\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E81B6F39-B71A-447E-85E2-536F0A414029}|C# Slave.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAP\u00CDTOL_1\\C# Slave\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\C# Slave\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\marcm\\OneDrive\\Desktop\\TFG\\CAP\u00CDTOL_1\\C# Slave\\Program.cs",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Interacci\u00F3 entre C# i C\u002B\u002B\\Connexions Master-Slave\\C# Slave, C\u002B\u002B Master\\C# Slave\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T11:13:27.803Z",
               "EditorCaption": ""

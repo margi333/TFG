@@ -1614,11 +1614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\C# + mySQL\\#3 Curs C# i mySQL\\#3 Curs C# i mySQL.csproj",
+      "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\mySQL\\Projecte C# Windows Forms interactuant amb mySQL\\#3 Curs C# i mySQL.csproj",
       "projectName": "#3 Curs C# i mySQL",
-      "projectPath": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\C# + mySQL\\#3 Curs C# i mySQL\\#3 Curs C# i mySQL.csproj",
+      "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\mySQL\\Projecte C# Windows Forms interactuant amb mySQL\\#3 Curs C# i mySQL.csproj",
       "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcm\\OneDrive - URV\\TFG\\C# + mySQL\\#3 Curs C# i mySQL\\obj\\",
+      "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\mySQL\\Projecte C# Windows Forms interactuant amb mySQL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

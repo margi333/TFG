@@ -8,10 +8,13 @@ public partial class Configuracio : ContentPage
     {
         InitializeComponent();
     }
-    private async void Contrasenya1_TextChanged(object sender, TextChangedEventArgs e)
-    {
 
-        if (e.NewTextValue.Any(char.IsDigit) && e.NewTextValue.Any(c => !char.IsLetterOrDigit(c)) && e.NewTextValue.Any(char.IsUpper))
+    // ✔️ Comprova si la nova contrasenya compleix requisits de força (majúscula, número i símbol)
+    private void Contrasenya1_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        if (e.NewTextValue.Any(char.IsDigit) &&
+            e.NewTextValue.Any(c => !char.IsLetterOrDigit(c)) &&
+            e.NewTextValue.Any(char.IsUpper))
         {
             val_contrasenya1.Text = "Contrasenya Forta";
             val_contrasenya1.TextColor = Colors.Green;
@@ -22,6 +25,8 @@ public partial class Configuracio : ContentPage
             val_contrasenya1.TextColor = Colors.Red;
         }
     }
+
+    // ✔️ Comprova si les dues contrasenyes coincideixen
     private void Contrasenya2_TextChanged(object sender, TextChangedEventArgs e)
     {
         if (e.NewTextValue.Equals(Contrasenya1.Text))
@@ -35,46 +40,75 @@ public partial class Configuracio : ContentPage
             val_contrasenya2.TextColor = Colors.Red;
         }
     }
+
+    // 🔐 Lògica per canviar la contrasenya a la base de dades
     private async void ContrasenyaBtnClicked(object sender, EventArgs e)
     {
-        if ((val_contrasenya1.TextColor != Colors.Green) && (val_contrasenya1.TextColor != Colors.Green))
+        // Comprovació visual de contrasenyes
+        if (val_contrasenya1.TextColor != Colors.Green || val_contrasenya2.TextColor != Colors.Green)
         {
             await DisplayAlert("Error", "Comprova les contrasenyes introduïdes", "D'acord!");
+            return;
         }
-        else
+
+        string novaContrasenya = Contrasenya1.Text.Trim();
+        var app = Application.Current as App;
+        string email = Preferences.Get("Email", app.Obj.email);
+
+        MySqlConnection conexionBD = null;
+        MySqlDataReader reader = null;
+
+        try
         {
-            MySqlConnection conexionBD = Conexion.conexion();
+            conexionBD = Conexion.conexion();
             conexionBD.Open();
-            MySqlDataReader reader2 = null;
-            var app = Application.Current as App;
-            string sql2 = "SELECT contrasenya_treballador FROM treballadors WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
-            MySqlCommand comando2 = new MySqlCommand(sql2, conexionBD);
-            reader2 = comando2.ExecuteReader();
-            string? contrasenya_antiga = "";
-            if (reader2.HasRows)
+
+            // Consulta per obtenir la contrasenya actual
+            string sqlConsulta = "SELECT contrasenya_treballador FROM treballadors WHERE email_treballador = @email LIMIT 1";
+            MySqlCommand cmdConsulta = new MySqlCommand(sqlConsulta, conexionBD);
+            cmdConsulta.Parameters.AddWithValue("@email", email);
+            reader = cmdConsulta.ExecuteReader();
+
+            string contrasenyaAntiga = "";
+            if (reader.HasRows)
             {
-                while (reader2.Read())
+                while (reader.Read())
                 {
-                    contrasenya_antiga = reader2.GetString("contrasenya_treballador");
+                    contrasenyaAntiga = reader.GetString("contrasenya_treballador");
                 }
             }
-            reader2.Close();
-            //conexionBD.Close();
-            if (contrasenya_antiga.Equals(Contrasenya1))
+            reader.Close();
+
+            // Evita reutilitzar la mateixa contrasenya
+            if (contrasenyaAntiga.Equals(novaContrasenya))
             {
-                await DisplayAlert("Error", "Introdueix una contrasenya que no hagis fet servir ja", "D'acord!");
+                await DisplayAlert("Error", "Introdueix una contrasenya diferent de l'actual", "D'acord!");
+                return;
             }
-            else
-            {
-                MySqlConnection conexionBD2 = Conexion.conexion();
-                string sql = "UPDATE treballadors SET contrasenya_treballador = '" + Contrasenya1.Text + "' WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
-                MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
-                comando3.Parameters.AddWithValue("@novaContra", Contrasenya1.Text);
-                comando3.Parameters.AddWithValue("@email", app.Obj.email);
-                comando3.ExecuteNonQuery();
-                conexionBD2.Close();
-                await DisplayAlert("Éxit!", "Contrasenya cambiada correctament", "D'acord!");
-            }
+
+            // Actualització segura de la contrasenya
+            string sqlUpdate = "UPDATE treballadors SET contrasenya_treballador = @novaContra WHERE email_treballador = @email";
+            MySqlCommand cmdUpdate = new MySqlCommand(sqlUpdate, conexionBD);
+            cmdUpdate.Parameters.AddWithValue("@novaContra", novaContrasenya);
+            cmdUpdate.Parameters.AddWithValue("@email", email);
+            cmdUpdate.ExecuteNonQuery();
+
+            await DisplayAlert("Èxit!", "Contrasenya canviada correctament", "D'acord!");
+        }
+        catch (MySqlException ex)
+        {
+            await DisplayAlert("Error de base de dades", ex.Message, "D'acord");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error inesperat", ex.Message, "D'acord");
+        }
+        finally
+        {
+            // Tanca connexió de manera segura
+            reader?.Close();
+            if (conexionBD != null && conexionBD.State == System.Data.ConnectionState.Open)
+                conexionBD.Close();
         }
     }
 }

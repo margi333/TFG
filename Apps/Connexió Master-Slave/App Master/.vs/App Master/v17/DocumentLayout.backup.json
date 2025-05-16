@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marcm\\Escritorio\\App Master\\",
+  "WorkspaceRootPath": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\escritorio\\app master\\secondarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:secondarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\escritorio\\app master\\secondarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:secondarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\escritorio\\app master\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\downloads\\tfg\\apps\\connexi\u00F3 master-slave\\app master\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\escritorio\\app master\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\downloads\\tfg\\apps\\connexi\u00F3 master-slave\\app master\\secondarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:secondarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\downloads\\tfg\\apps\\connexi\u00F3 master-slave\\app master\\secondarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:secondarypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|c:\\users\\marcm\\downloads\\tfg\\apps\\connexi\u00F3 master-slave\\app master\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{36B81BA7-A27E-4350-9017-CB643B59E48D}|App Master.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,53 +36,51 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\App Master\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\marcm\\Escritorio\\App Master\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-28T09:21:53.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T09:21:53.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\App Master\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\marcm\\Escritorio\\App Master\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwBUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T09:05:28.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SecondaryPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\App Master\\SecondaryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\SecondaryPage.xaml.cs",
               "RelativeDocumentMoniker": "SecondaryPage.xaml.cs",
-              "ToolTip": "C:\\Users\\marcm\\Escritorio\\App Master\\SecondaryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\SecondaryPage.xaml.cs",
               "RelativeToolTip": "SecondaryPage.xaml.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwE4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T08:18:31.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SecondaryPage.xaml",
-              "DocumentMoniker": "C:\\Users\\marcm\\Escritorio\\App Master\\SecondaryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\SecondaryPage.xaml",
               "RelativeDocumentMoniker": "SecondaryPage.xaml",
-              "ToolTip": "C:\\Users\\marcm\\Escritorio\\App Master\\SecondaryPage.xaml",
+              "ToolTip": "C:\\Users\\marcm\\Downloads\\TFG\\Apps\\Connexi\u00F3 Master-Slave\\App Master\\SecondaryPage.xaml",
               "RelativeToolTip": "SecondaryPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-09T08:07:50.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T08:07:50.944Z"
             }
           ]
         }

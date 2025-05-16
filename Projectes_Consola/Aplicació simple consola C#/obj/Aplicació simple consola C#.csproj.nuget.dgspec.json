@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcm\\TFG\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj": {}
+    "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcm\\TFG\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj": {
+    "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcm\\TFG\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj",
+        "projectUniqueName": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj",
         "projectName": "Aplicació simple consola C#",
-        "projectPath": "C:\\Users\\marcm\\TFG\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj",
+        "projectPath": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicació simple consola C#\\Aplicació simple consola C#.csproj",
         "packagesPath": "C:\\Users\\marcm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcm\\TFG\\Aplicació simple consola C#\\obj\\",
+        "outputPath": "C:\\Users\\marcm\\Downloads\\TFG\\Projectes_Consola\\Aplicació simple consola C#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
