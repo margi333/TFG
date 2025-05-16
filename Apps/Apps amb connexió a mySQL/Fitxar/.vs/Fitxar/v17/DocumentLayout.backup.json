@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\marcm\\TFG\\Fitxar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\conexio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:conexio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\fitxatge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:fitxatge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\configuracio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:configuracio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\configuracio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:configuracio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\fitxatge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:fitxatge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\conexio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:conexio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -21,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\fitxatge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:fitxatge.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\fitxatge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|solutionrelative:fitxatge.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDB04AAC-1455-4DD5-AE69-6C8502E83EC1}|Fitxar.csproj|c:\\users\\marcm\\tfg\\fitxar\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,66 +50,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fitxatge.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml",
+              "RelativeDocumentMoniker": "Fitxatge.xaml",
+              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml",
+              "RelativeToolTip": "Fitxatge.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-25T09:57:35.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexio.cs",
-              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Conexio.cs",
-              "RelativeDocumentMoniker": "Conexio.cs",
-              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Conexio.cs",
-              "RelativeToolTip": "Conexio.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAACDAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Configuracio.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Configuracio.xaml.cs",
+              "RelativeDocumentMoniker": "Configuracio.xaml.cs",
+              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Configuracio.xaml.cs",
+              "RelativeToolTip": "Configuracio.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:38:42.518Z",
+              "WhenOpened": "2025-05-16T08:45:36.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Configuracio.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Configuracio.xaml",
+              "RelativeDocumentMoniker": "Configuracio.xaml",
+              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Configuracio.xaml",
+              "RelativeToolTip": "Configuracio.xaml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T18:14:12.554Z",
+              "WhenOpened": "2025-05-15T14:57:43.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Fitxatge.xaml",
-              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml",
-              "RelativeDocumentMoniker": "Fitxatge.xaml",
-              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml",
-              "RelativeToolTip": "Fitxatge.xaml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T09:57:35.217Z"
+              "Title": "Conexio.cs",
+              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Conexio.cs",
+              "RelativeDocumentMoniker": "Conexio.cs",
+              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Conexio.cs",
+              "RelativeToolTip": "Conexio.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAADCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:38:42.518Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-25T18:14:12.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Fitxatge.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml.cs",
               "RelativeDocumentMoniker": "Fitxatge.xaml.cs",
               "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\Fitxatge.xaml.cs",
               "RelativeToolTip": "Fitxatge.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowCUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T09:34:48.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
@@ -109,25 +143,23 @@
               "RelativeToolTip": "MainPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:53:52.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T08:53:52.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\marcm\\TFG\\Fitxar\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA2wBAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wBAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:52:40.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T08:52:40.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -135,12 +167,11 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T08:51:30.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T08:51:30.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marcm\\TFG\\Fitxar\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",

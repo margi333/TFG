@@ -10,6 +10,7 @@ BackgroundColor="White">
             Spacing="25">
 
             <Label
+        TextColor="Black"
         Text="Correu:"
         Style="{StaticResource SubHeadline}"
         HorizontalOptions="Center"
@@ -22,6 +23,7 @@ BackgroundColor="White">
         HorizontalOptions="Center"/>
             <Label
         Text="Constrasenya:"
+        TextColor="Black"
         Style="{StaticResource SubHeadline}"
         HorizontalOptions="Center"
         SemanticProperties.HeadingLevel="Level1" />

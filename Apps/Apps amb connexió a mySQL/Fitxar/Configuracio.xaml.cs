@@ -1,4 +1,4 @@
-using MySql.Data.MySqlClient;
+ï»¿using MySql.Data.MySqlClient;
 
 namespace Fitxar;
 
@@ -18,7 +18,7 @@ public partial class Configuracio : ContentPage
         }
         else
         {
-            val_contrasenya1.Text = "Contrasenya Dèbil";
+            val_contrasenya1.Text = "Contrasenya DÃ¨bil";
             val_contrasenya1.TextColor = Colors.Red;
         }
     }
@@ -26,12 +26,12 @@ public partial class Configuracio : ContentPage
     {
         if (e.NewTextValue.Equals(Contrasenya1.Text))
         {
-            val_contrasenya2.Text = "?";
+            val_contrasenya2.Text = "â˜‘";
             val_contrasenya2.TextColor = Colors.Green;
         }
         else
         {
-            val_contrasenya2.Text = "?";
+            val_contrasenya2.Text = "X";
             val_contrasenya2.TextColor = Colors.Red;
         }
     }
@@ -39,7 +39,7 @@ public partial class Configuracio : ContentPage
     {
         if ((val_contrasenya1.TextColor != Colors.Green) && (val_contrasenya1.TextColor != Colors.Green))
         {
-            await DisplayAlert("Error", "Comprova les contrasenyes introduïdes", "D'acord!");
+            await DisplayAlert("Error", "Comprova les contrasenyes introduÃ¯des", "D'acord!");
         }
         else
         {
@@ -47,7 +47,7 @@ public partial class Configuracio : ContentPage
             conexionBD.Open();
             MySqlDataReader reader2 = null;
             var app = Application.Current as App;
-            string sql2 = "SELECT contrasenya FROM treballdors WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
+            string sql2 = "SELECT contrasenya_treballador FROM treballadors WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
             MySqlCommand comando2 = new MySqlCommand(sql2, conexionBD);
             reader2 = comando2.ExecuteReader();
             string? contrasenya_antiga = "";
@@ -59,7 +59,7 @@ public partial class Configuracio : ContentPage
                 }
             }
             reader2.Close();
-            conexionBD.Close();
+            //conexionBD.Close();
             if (contrasenya_antiga.Equals(Contrasenya1))
             {
                 await DisplayAlert("Error", "Introdueix una contrasenya que no hagis fet servir ja", "D'acord!");
@@ -67,13 +67,13 @@ public partial class Configuracio : ContentPage
             else
             {
                 MySqlConnection conexionBD2 = Conexion.conexion();
-                string sql = "UPDATE treballadors SET contrasenya_treballador = @novaContra WHERE email_treballador LIKE @email LIMIT 1";
-                MySqlCommand comando3 = new MySqlCommand(sql, conexionBD2);
-                comando3.Parameters.AddWithValue("@novaContra", Contrasenya1);
+                string sql = "UPDATE treballadors SET contrasenya_treballador = '" + Contrasenya1.Text + "' WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
+                MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
+                comando3.Parameters.AddWithValue("@novaContra", Contrasenya1.Text);
                 comando3.Parameters.AddWithValue("@email", app.Obj.email);
                 comando3.ExecuteNonQuery();
                 conexionBD2.Close();
-                await DisplayAlert("Éxit!", "Contrasenya cambiada correctament", "D'acord!");
+                await DisplayAlert("Ã‰xit!", "Contrasenya cambiada correctament", "D'acord!");
             }
         }
     }

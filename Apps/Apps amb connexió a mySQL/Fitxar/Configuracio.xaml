@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fitxar.Configuracio"
+             BackgroundColor="White"
              Title="Configuracio">
     <VerticalStackLayout
 BackgroundColor="White"
@@ -14,6 +15,7 @@ Spacing="25">
             <Label
         Text="Introdueix una nova contrasenya:"
         WidthRequest="130"
+                TextColor="Black"
         HorizontalTextAlignment="End"
         VerticalTextAlignment="Center"
         Style="{StaticResource SubHeadline}"
@@ -28,6 +30,7 @@ Spacing="25">
             <Label
         Text=""
         x:Name="val_contrasenya1"
+                TextColor="Black"
         Style="{StaticResource SubHeadline}"
         VerticalTextAlignment="Center"
         HorizontalTextAlignment="Center"
@@ -39,6 +42,7 @@ Spacing="25">
             <Label
         Text="Repeteix la contrasenya:"
         WidthRequest="130"
+        TextColor="Black"
         FontSize="18"
         HorizontalTextAlignment="End"
         VerticalTextAlignment="Center"
@@ -55,6 +59,7 @@ Spacing="25">
         x:Name="val_contrasenya2"
         Style="{StaticResource SubHeadline}"
         VerticalTextAlignment="Center"
+        TextColor="Black"
         HorizontalTextAlignment="Center"
         SemanticProperties.HeadingLevel="Level1" />
         </HorizontalStackLayout>

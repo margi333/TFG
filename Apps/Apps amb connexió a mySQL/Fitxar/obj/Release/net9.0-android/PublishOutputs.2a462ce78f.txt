@@ -1,0 +1,4 @@
+C:\Users\marcm\TFG\Fitxar\bin\Release\net9.0-android\publish\com.companyname.fitxar-Signed.aab
+C:\Users\marcm\TFG\Fitxar\bin\Release\net9.0-android\publish\com.companyname.fitxar.aab
+C:\Users\marcm\TFG\Fitxar\bin\Release\net9.0-android\publish\com.companyname.fitxar-Signed.apk
+C:\Users\marcm\TFG\Fitxar\bin\Release\net9.0-android\publish\_Microsoft.Android.Resource.Designer.dll

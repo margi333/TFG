@@ -1,16 +1,13 @@
 using MySql.Data.MySqlClient;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Fitxar;
-/*COSES A FER:
-    PREFERENCES A FITXAR PER A QUE NO PUGI FITXAR MÉS D'UN COP AL DIA
-    ARREGLAR ESTÈTICAMENT
-    COMPROVAR FUNCIONAMENT DEL CAMBI DE CONTRASENYA
-*/
+
 public partial class Fitxatge : ContentPage
 {
-    public string? Nom { get; set; } = "";
-
+    string? Nom;
     private bool inici = true;
     public string Dia { get; set; }
     public string Hores { get; set; }
@@ -19,140 +16,143 @@ public partial class Fitxatge : ContentPage
         InitializeComponent();
         BindingContext = new MainViewModel();
         IniciarActualitzacioHora();
-        if (inici)
-        {
-            inici = false;
-            Inici_Nom();
-        }
     }
+
     private void IniciarActualitzacioHora()
     {
-        // Utilitza el Dispatcher principal
         var timer = Application.Current.Dispatcher.CreateTimer();
         timer.Interval = TimeSpan.FromSeconds(1);
         timer.Tick += (s, e) =>
         {
             HoraLabel.Text = DateTime.Now.ToString("HH:mm");
+            if (DateTime.Now.Equals(TimeSpan.Zero))
+            {
+                Preferences.Set("fitxar", true);
+            }
         };
         timer.Start();
-    }
-    private void Inici_Nom()
-    {
-        MySqlConnection conexionBD = Conexion.conexion();
-        conexionBD.Open();
-        MySqlDataReader reader2 = null;
-        var app = Application.Current as App;
-        string sql2 = "SELECT nom_treballador FROM treballadors WHERE email_treballador LIKE '" + Preferences.Get("Email", app.Obj.email) + "' LIMIT 1";
-        MySqlCommand comando2 = new MySqlCommand(sql2, conexionBD);
-        reader2 = comando2.ExecuteReader();
-        string? nom_sql = "";
-        if (reader2.HasRows)
-        {
-            while (reader2.Read())
-            {
-                nom_sql = reader2.GetString("nom_treballador");
-            }
-            app.Obj.nom = nom_sql;
-        }
-        reader2.Close();
-        conexionBD.Close();
-        Nom = app.Obj.nom;
     }
     bool fitxar_entrada = false;
     private void FitxarBtnClicked(object sender, EventArgs e)
     {
-        if (!fitxar_entrada)
+        if (Preferences.Get("fitxar", true))
         {
-            fitxar_entrada = true;
-            MySqlConnection conexionBD = Conexion.conexion();
-            conexionBD.Open();
-            var app = Application.Current as App;
-            string tableName = Preferences.Get("DB", null) ;
+            if (!fitxar_entrada)
+            {
+                fitxar_entrada = true;
+                MySqlConnection conexionBD = Conexion.conexion();
+                conexionBD.Open();
+                var app = Application.Current as App;
+                string tableName = Preferences.Get("DB", null);
 
-            // Fes servir interpolació per al nom de la taula
-            string sql = $"INSERT INTO {tableName} (dia, hora_entrada) VALUES (@dia, @hora_in);";
+                // Fes servir interpolació per al nom de la taula
+                string sql = $"INSERT INTO {tableName} (dia, hora_entrada) VALUES (@dia, @hora_in);";
 
-            MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
-            comando3.Parameters.AddWithValue("@dia", DateTime.Now.ToString("yyyy-MM-dd"));
-            comando3.Parameters.AddWithValue("@hora_in", DateTime.Now.ToString("HH:mm:ss"));
-            comando3.ExecuteNonQuery();
-            conexionBD.Close();
-            EstatFitxatge.Text = $"Has fitxat la entrada a les {DateTime.Now.ToString("HH:mm")}";
-        }
-        else
-        {
-            fitxar_entrada = false;
-            MySqlConnection conexionBD = Conexion.conexion();
-            conexionBD.Open();
-            var app = Application.Current as App;
-            string tableName = Preferences.Get("DB", null);
+                MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
+                comando3.Parameters.AddWithValue("@dia", DateTime.Now.ToString("yyyy-MM-dd"));
+                comando3.Parameters.AddWithValue("@hora_in", DateTime.Now.ToString("HH:mm:ss"));
+                comando3.ExecuteNonQuery();
+                conexionBD.Close();
+                EstatFitxatge.Text = $"Has fitxat la entrada a les {DateTime.Now.ToString("HH:mm")}";
+            }
+            else
+            {
+                fitxar_entrada = false;
+                Preferences.Set("fitxar", false);
+                MySqlConnection conexionBD = Conexion.conexion();
+                conexionBD.Open();
+                var app = Application.Current as App;
+                string tableName = Preferences.Get("DB", null);
 
-            string sql = $"UPDATE {tableName} SET hora_sortida = @hora_out WHERE dia = @dia LIMIT 1";
+                string sql = $"UPDATE {tableName} SET hora_sortida = @hora_out WHERE dia = @dia LIMIT 1";
 
-            MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
-            comando3.Parameters.AddWithValue("@dia", DateTime.Now.ToString("yyyy-MM-dd"));
-            comando3.Parameters.AddWithValue("@hora_out", DateTime.Now.ToString("HH:mm:ss"));
-            comando3.ExecuteNonQuery();
-            conexionBD.Close();
-            EstatFitxatge.Text = $"Has fitxat la sortida a les {DateTime.Now.ToString("HH:mm")}";
+                MySqlCommand comando3 = new MySqlCommand(sql, conexionBD);
+                comando3.Parameters.AddWithValue("@dia", DateTime.Now.ToString("yyyy-MM-dd"));
+                comando3.Parameters.AddWithValue("@hora_out", DateTime.Now.ToString("HH:mm:ss"));
+                comando3.ExecuteNonQuery();
+                conexionBD.Close();
+                EstatFitxatge.Text = $"Has fitxat la sortida a les {DateTime.Now.ToString("HH:mm")}";
+            }
         }
     }
 }
 
-public class MainViewModel
+public class MainViewModel : INotifyPropertyChanged
 {
-    public ObservableCollection<FitxatgeItem> Fitxades { get; set; }
-    string? nom_sql = "";
-    string? dia1, dia2, dia3;
-    string? horain1, horain2, horain3;
-    string? horaout1, horaout2, horaout3;
+    public ObservableCollection<FitxatgeItem> Fitxades { get; set; } = new();
+    private string? nom;
+    public string? Nom
+    {
+        get => nom;
+        set
+        {
+            if (nom != value)
+            {
+                nom = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
     public MainViewModel()
     {
+        CarregarDadesAsync();
+    }
+
+    private async Task CarregarDadesAsync()
+    {
+        await CarregarNomAsync();
+        await CarregarFitxadesAsync();
+    }
+
+    private async Task CarregarNomAsync()
+    {
         MySqlConnection conexionBD = Conexion.conexion();
-        conexionBD.Open();
-        MySqlDataReader reader2 = null;
+        await conexionBD.OpenAsync();
+        var app = Application.Current as App;
+        string sql = $"SELECT nom_treballador FROM treballadors WHERE email_treballador LIKE '{Preferences.Get("Email", app.Obj.email)}' LIMIT 1";
+        MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+        using var reader = (MySqlDataReader)await comando.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            Nom = reader.GetString("nom_treballador");
+            app.Obj.nom = Nom; // actualitzar també l'objecte de l'app
+        }
+        await reader.CloseAsync();
+        await conexionBD.CloseAsync();
+    }
+
+    private async Task CarregarFitxadesAsync()
+    {
+        MySqlConnection conexionBD = Conexion.conexion();
+        await conexionBD.OpenAsync();
         var app = Application.Current as App;
         string tableName = Preferences.Get("BD", "`bznhpmxi9fccnbiorubm`.`Marc Marginet #1`");
         string sql = $"SELECT * FROM {tableName} ORDER BY dia DESC LIMIT 3;";
-        MySqlCommand comando2 = new MySqlCommand(sql, conexionBD);
-        reader2 = comando2.ExecuteReader();
+        MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+        using var reader = (MySqlDataReader)await comando.ExecuteReaderAsync();
         int fila = 0;
-        if (reader2.HasRows)
+        while (await reader.ReadAsync())
         {
-            while (reader2.Read())
+            string dia = reader.GetDateTime("dia").ToString("dd/MM/yyyy");
+            string horaEntrada = reader.GetTimeSpan("hora_entrada").ToString(@"hh\:mm");
+            string horaSortida = reader.GetTimeSpan("hora_sortida").ToString(@"hh\:mm");
+            Fitxades.Add(new FitxatgeItem
             {
-                if (fila == 0)
-                {
-                    dia1 = reader2.GetDateTime("dia").ToString("dd/MM/yyyy");
-                    horain1 = reader2.GetTimeSpan("hora_entrada").ToString(@"hh\:mm");
-                    horaout1 = reader2.GetTimeSpan("hora_sortida").ToString(@"hh\:mm");
-                }
-                else if (fila == 1)
-                {
-                    dia2 = reader2.GetDateTime("dia").ToString("dd/MM/yyyy");
-                    horain2 = reader2.GetTimeSpan("hora_entrada").ToString(@"hh\:mm");
-                    horaout2 = reader2.GetTimeSpan("hora_sortida").ToString(@"hh\:mm");
-                }
-                else if (fila == 2)
-                {
-                    dia3 = reader2.GetDateTime("dia").ToString("dd/MM/yyyy");
-                    horain3 = reader2.GetTimeSpan("hora_entrada").ToString(@"hh\:mm");
-                    horaout3 = reader2.GetTimeSpan("hora_sortida").ToString(@"hh\:mm");
-                }
-
-                fila++;
-            }
+                Dia = dia,
+                Hores = $"{horaEntrada} – {horaSortida}"
+            });
+            fila++;
         }
-        reader2.Close();
-        conexionBD.Close();
-        Fitxades = new ObservableCollection<FitxatgeItem>
-        {
-            new FitxatgeItem { Dia = dia1, Hores = $"{horain1} – {horaout1}" },
-            new FitxatgeItem { Dia = dia2, Hores = $"{horain2} – {horaout2}" },
-            new FitxatgeItem { Dia = dia3, Hores = $"{horain3} – {horaout3}" }
-        };
+        await reader.CloseAsync();
+        await conexionBD.CloseAsync();
     }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }
+
 public class FitxatgeItem
 {
     public string Dia { get; set; }
