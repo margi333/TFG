@@ -11,7 +11,7 @@ class Program
         // Crea un socket TCP per escoltar (IPv4, mode Stream, protocol TCP)
         Socket listenSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-        // Associa el socket a una IP i port determinats
+        // Associa el socket a una IP i port determinats 
         listenSocket.Bind(new IPEndPoint(IPAddress.Parse("192.168.18.103"), port));
 
         // Comença a escoltar connexions entrants (1 connexió com a màxim en cua)

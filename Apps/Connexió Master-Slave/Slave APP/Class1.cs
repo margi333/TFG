@@ -11,6 +11,7 @@ namespace Slave_APP
     class ClientHandler
     {
         private Socket clientSocket; // Socket associat al client
+        string ultimaparaula = ""; // Guarda l’últim text rebut per retornar-lo en cas de petició
 
         // Constructor que rep el socket del client
         public ClientHandler(Socket socket)
@@ -25,7 +26,6 @@ namespace Slave_APP
             while (clientSocket != null && clientSocket.Connected)
             {
                 byte[] buffer = new byte[sizeof(int) * 3]; // Buffer per rebre dades (ex: trama de 3 enters)
-                string ultimaparaula = ""; // Guarda l’últim text rebut per retornar-lo en cas de petició
 
                 int bytesRead = clientSocket.Receive(buffer); // Llegeix dades del client
 
@@ -51,11 +51,13 @@ namespace Slave_APP
                         clientSocket.Close(); // Tanca la connexió amb el client
                     }
                     // --- Comanda de sol·licitud de dades ---
-                    else if (decodedString.Equals("Sol·licitar"))
+                    else if (decodedString.Trim().Equals("Solicitar\0\0\0"))
                     {
+                        byte[] ack = { 0x06 }; // 0x06 = ACK
+                        clientSocket.Send(ack);
                         // Codifica l’última paraula rebuda en ASCII i l’envia com a "trama"
                         byte[] trama = Encoding.ASCII.GetBytes(ultimaparaula);
-                        clientSocket.Send(buffer); // Envia buffer original (⚠️ probablement erroni, s'hauria d'enviar 'trama')
+                        clientSocket.Send(trama); // Envia buffer original (probablement erroni, s'hauria d'enviar 'trama')
 
                         // Espera ACK per confirmar recepció
                         byte[] ackBuffer = new byte[1];
